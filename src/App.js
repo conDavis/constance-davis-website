@@ -10,14 +10,16 @@ import Resume from "./pages/Resume";
 
 function App() {
   return (
-    <Router >
-      <Navbar sticky="top"/>
+    <Router>
+      <Navbar sticky="top" />
       <Routes>
-        <Route path="/" exact element={<Home/>} />
-        <Route path="/software" element={<Software/>} />
-        <Route path="/art" element={<Art/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/resume" element={<Resume/>}>Resume</Route>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/software" element={<Software />} />
+        <Route path="/art" element={<Art />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/resume" element={<Resume />}>
+          Resume
+        </Route>
       </Routes>
     </Router>
   );

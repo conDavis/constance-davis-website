@@ -1,3 +1,3 @@
 module.exports = {
-    inject: true,
-}
+  inject: true,
+};

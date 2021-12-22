@@ -4,8 +4,10 @@ import {
   Nav,
   NavBtn,
   NavBtnLink,
-  NavLink, NavLogo,
-  NavMenu, NavName,
+  NavLink,
+  NavLogo,
+  NavMenu,
+  NavName,
 } from "./NavBarElements";
 
 import logo from "../../assets/conLogo.png";
@@ -13,26 +15,40 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavLogo src={logo}  alt="Logo"/>
+        <NavLogo src={logo} alt="Logo" />
         <NavName>Constance Davis</NavName>
-
 
         <Bars />
 
         <NavMenu>
-          <NavLink to="/" className={({ isActive }) => isActive? "active": ''}>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             About Me
           </NavLink>
-          <NavLink to="/software" className={({ isActive }) => isActive? "active": ''}>
+          <NavLink
+            to="/software"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Software
           </NavLink>
-          <NavLink to="/art" className={({ isActive }) => isActive? "active": ''}>
+          <NavLink
+            to="/art"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Art
           </NavLink>
-          <NavLink to="/resume" className={({ isActive }) => isActive? "active": ''}>
+          <NavLink
+            to="/resume"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Resume
           </NavLink>
-          <NavLink to="/contact" className={({ isActive }) => isActive? "active": ''}>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Contact
           </NavLink>
           {/* Second Nav */}
