@@ -3,18 +3,19 @@ import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  background: #63d471;
-  height: 85px;
+  background: #F6ECF6;
+  height: 76px;
   display: flex;
-  justify-content: space-between;
-  padding: 0.2rem calc((100vw - 1000px) / 2);
   z-index: 12;
+  padding-left: 24px;
+  position: sticky;
+  top: 0;
   /* Third Nav */
   /* justify-content: flex-start; */
 `;
 
 export const NavLink = styled(Link)`
-  color: #808080;
+  color: #BA0C5F;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -22,8 +23,29 @@ export const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   &.active {
-    color: #000000;
+    color: #728F20;
+    font-weight: bold;
   }
+`;
+
+export const NavName = styled.p`
+  font-weight: bold;
+  font-size: 25px;
+  color: #5A6931;
+  padding-right: 40%;
+`;
+
+export const linkedInIcon = styled.img`
+  width: 35px;
+`;
+
+
+
+
+export const NavLogo = styled.img`
+    height: 88px;
+    padding-top: 8px;
+    overflow: visible;
 `;
 
 export const Bars = styled(FaBars)`

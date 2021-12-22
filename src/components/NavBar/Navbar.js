@@ -4,19 +4,24 @@ import {
   Nav,
   NavBtn,
   NavBtnLink,
-  NavLink,
-  NavMenu,
+  NavLink, NavLogo,
+  NavMenu, NavName,
 } from "./NavBarElements";
 
+import logo from "../../assets/conLogo.png";
 const Navbar = () => {
   return (
     <>
       <Nav>
+        <NavLogo src={logo}  alt="Logo"/>
+        <NavName>Constance Davis</NavName>
+
+
         <Bars />
 
         <NavMenu>
           <NavLink to="/" className={({ isActive }) => isActive? "active": ''}>
-            AboutMe
+            About Me
           </NavLink>
           <NavLink to="/software" className={({ isActive }) => isActive? "active": ''}>
             Software
