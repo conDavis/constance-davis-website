@@ -1,3 +1,3 @@
 export default {
-    NAV_HEIGHT: 76,
+  NAV_HEIGHT: 76,
 };
