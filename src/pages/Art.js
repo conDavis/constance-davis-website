@@ -1,10 +1,12 @@
 import React from "react";
-
+import { ArtContainer, ArtContent } from "./PageElements";
 const Art = () => {
   return (
-    <div>
-      <h2>Art</h2>
-    </div>
+    <ArtContainer>
+      <ArtContent>
+        <h1>Random Piece Generator</h1>
+      </ArtContent>
+    </ArtContainer>
   );
 };
 

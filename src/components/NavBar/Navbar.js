@@ -2,20 +2,24 @@ import React from "react";
 import {
   Bars,
   Nav,
-  NavBtn,
-  NavBtnLink,
+  NavIcon,
   NavLink,
   NavLogo,
   NavMenu,
   NavName,
 } from "./NavBarElements";
+import linkedInIcon from "../../assets/linkedInIcon.png";
+import { NavLink as Link } from "react-router-dom";
 
-import logo from "../../assets/conLogo.png";
+import logo from "../../assets/conlong3.png";
 const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavLogo src={logo} alt="Logo" />
+        <Link to="/" className={({ isActive }) => (isActive ? "active" : "")}>
+          <NavLogo src={logo} alt="Logo" />
+        </Link>
+
         <NavName>Constance Davis</NavName>
 
         <Bars />
@@ -51,12 +55,16 @@ const Navbar = () => {
           >
             Contact
           </NavLink>
+          <a
+            href="https://www.linkedin.com/in/constanceleedavis/"
+            target="_blank"
+          >
+            <NavIcon src={linkedInIcon} />
+          </a>
+
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
-        <NavBtn>
-          <NavBtnLink to="/signin">Sign In</NavBtnLink>
-        </NavBtn>
       </Nav>
     </>
   );
