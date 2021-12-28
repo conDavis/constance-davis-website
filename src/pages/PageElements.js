@@ -57,6 +57,25 @@ export const ArtContent = styled.div`
   text-align: center;
 `;
 
+export const PieceContainer = styled.div`
+  height: 100%;
+  width: 100%;
+`;
+
+export const RandomPiece = styled.img`
+  max-width: 65%;
+  max-height: 55%;
+`;
+
+export const ArtButton = styled.button`
+  background-color: #f1d5e3;
+  color: #293d3d;
+  border: none;
+  padding: 4px 4px 4px 4px;
+  margin: 4px 4px 4px 4px;
+  font-size: 16px;
+`;
+
 /* Resume */
 
 export const ResumeIframe = styled.iframe`

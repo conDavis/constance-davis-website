@@ -15,6 +15,7 @@ h1 {
   font-weight: normal;
   position: relative;
   overflow: hidden;
+  margin-bottom: 8px;
 }
 
 p {
