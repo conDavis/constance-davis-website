@@ -92,9 +92,22 @@ export const ResumeContainer = styled.div`
 
 export const ContactList = styled.ul`
   list-style-type: none;
-  padding-left: 0 !important;
+  display: inline-block;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+  font-size: 25px;
+  
+`;
+
+export const ContactLi = styled.li`
+  padding-bottom: 4px;
 `;
 
 export const ContactIcon = styled.img`
-  width: 30px;
+  width: 50px;
+  padding-bottom: 4px;
+  padding-right: 16px;
+  vertical-align: middle;
 `;
