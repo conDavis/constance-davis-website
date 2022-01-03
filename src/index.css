@@ -22,6 +22,15 @@ p {
   font-size: 22px;
 }
 
+a {
+  color : inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #BA0C5F;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

@@ -16,7 +16,7 @@ export const AboutMeSideBar = styled.div`
 export const AboutMeContent = styled.div`
   flex: 3;
   padding-left: 4%;
-  padding-top: 6%;
+  padding-top: 5%;
   padding-right: 5%;
 `;
 
@@ -90,6 +90,29 @@ export const ResumeContainer = styled.div`
 
 /* Contact */
 
+export const ContactContainer = styled.div`
+  
+  text-align: center;
+  background-color: #EAF4CE;
+  width: 30%;
+  height: 100%;
+  margin: 6% auto;
+  padding: 16px 32px 32px 32px;
+`;
+
+export const ContactHeader = styled.h1`
+  float: right;
+  margin-left: -12px;
+`;
+
+
+
+export const ContactLogo = styled.img`
+  width: 100px;
+  margin-top: 1em;
+  float: left;
+`;
+
 export const ContactList = styled.ul`
   list-style-type: none;
   display: inline-block;
@@ -102,12 +125,19 @@ export const ContactList = styled.ul`
 `;
 
 export const ContactLi = styled.li`
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 `;
 
 export const ContactIcon = styled.img`
-  width: 50px;
+  width: 40px;
   padding-bottom: 4px;
   padding-right: 16px;
   vertical-align: middle;
+`;
+
+
+/* Software */
+
+export const SoftwareContainer = styled.div`
+  padding: 0 1em 0 1em;
 `;
