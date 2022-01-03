@@ -6,7 +6,7 @@ import Software from "./pages/SoftwarePage/Software";
 import Art from "./pages/Art";
 import Contact from "./pages/ContactPage/Contact";
 import Navbar from "./components/NavBar/Navbar";
-import Resume from "./pages/Resume";
+import Resume from "./pages/ResumePage/Resume";
 
 function App() {
   return (

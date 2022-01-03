@@ -7,6 +7,7 @@ import {
   ArtButton,
 } from "./PageElements";
 import ConLoader from "../components/Loader";
+
 const Art = () => {
   const [isFetchingData, setIsFetchingData] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -28,8 +29,10 @@ const Art = () => {
           onClick={() => {
             setIsImageLoaded(false);
             setIsFetchingData(true);
+            debugger;
             fetchArt().then(() => {
               setIsFetchingData(false);
+              debugger;
             });
           }}
         >
