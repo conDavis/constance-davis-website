@@ -76,14 +76,4 @@ export const ArtButton = styled.button`
   font-size: 16px;
 `;
 
-/* Resume */
 
-export const ResumeIframe = styled.iframe`
-  flex: 1;
-  overflow: hidden;
-  height: ${window.screen.availHeight}px;
-`;
-
-export const ResumeContainer = styled.div`
-  display: flex;
-`;

@@ -1,6 +1,6 @@
 import React from "react";
-import resume from "../assets/current_resume.pdf";
-import { ResumeContainer, ResumeIframe } from "./PageElements";
+import resume from "../../assets/current_resume.pdf";
+import { ResumeContainer, ResumeIframe } from "./ResumeElements";
 
 const Resume = () => {
   return (
