@@ -13,9 +13,52 @@ const Contact = () => {
   const email = "davis.con@northeastern.edu";
 
   const [isEmailCopied, setIsEmailCopied] = useState(false);
+  const [areIconsLoaded, setAreIconsLoaded] = useState(false);
   const copyEmail = () => {
     navigator.clipboard.writeText(email).then(() => setIsEmailCopied(true));
   };
+
+  const CopyToClipboardIcon = () => {
+    return (<i className="fa fa-clipboard" aria-hidden="true"
+               style={{ fontSize: "22px", paddingTop: "4px", color: isEmailCopied ? "#BA0C5F" : "black" }}
+               onClick={copyEmail} />);
+  };
+
+  const ToolTipText = () => {
+    return (<span className="tooltiptext">
+            Copy Email
+            </span>);
+  };
+
+  const Email = () => {
+    return (<ContactLi>
+      <ContactIcon src={mailIcon} />
+      {email}
+      <div className="tooltip" >
+        <ToolTipText/>
+        <CopyToClipboardIcon/>
+      </div>
+    </ContactLi>);
+  };
+
+  const Phone = () => {
+    return (<ContactLi>
+      <ContactIcon src={phoneIcon} style={{ width: "55px", marginLeft: "-8px", paddingRight: "10px" }} />631.935.4505
+    </ContactLi>);
+  };
+
+  const Github = () => {
+    return (<ContactLi>
+      <a href={githubURL} target="_blank"><ContactIcon src={githubIcon} />conDavis</a>
+    </ContactLi>);
+  };
+
+  const LinkedIn = () => {
+    return (<ContactLi>
+      <a href={linkedInURL} target="_blank"><ContactIcon src={linkedInIcon} />Constance Davis</a>
+    </ContactLi>);
+  };
+
 
 
   useEffect(() => {
@@ -25,33 +68,13 @@ const Contact = () => {
 
 
   return (
-    <ContactContainer>
-      <div style={{ display: "inline-block" }}><ContactLogo src={conLogo} /> <ContactHeader>tact </ContactHeader></div>
+    <ContactContainer style = {areIconsLoaded ? {} : {display: "none"}}>
+      <div style={{ display: "inline-block" }}><ContactLogo src={conLogo} onLoad={() => setAreIconsLoaded(true)}/> <ContactHeader>tact </ContactHeader></div>
       <ContactList>
-        <ContactLi>
-          <ContactIcon src={mailIcon} />
-          {email}
-          <div className="tooltip" style={{ marginLeft: "60px" }}>
-             <span className="tooltiptext">
-            Copy Email
-            </span>
-            <i className="fa fa-clipboard" aria-hidden="true"
-               style={{ fontSize: "22px", paddingTop: "4px", color: isEmailCopied ? "#BA0C5F" : "black" }}
-               onClick={copyEmail} />
-          </div>
-
-
-        </ContactLi>
-        <ContactLi>
-          <ContactIcon src={phoneIcon} style={{ width: "55px", marginLeft: "-8px", paddingRight: "10px" }} />631.935.4505
-
-        </ContactLi>
-        <ContactLi>
-          <a href={githubURL} target="_blank"><ContactIcon src={githubIcon} />conDavis</a>
-        </ContactLi>
-        <ContactLi>
-          <a href={linkedInURL} target="_blank"><ContactIcon src={linkedInIcon} />Constance Davis</a>
-        </ContactLi>
+        <Email />
+        <Phone />
+        <Github />
+        <LinkedIn />
       </ContactList>
 
       <p>I'd love to talk</p>

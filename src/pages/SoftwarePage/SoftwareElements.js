@@ -3,7 +3,7 @@
 import styled from "styled-components";
 
 export const SoftwareContainer = styled.div`
-  padding: 0 1em 0 1em;
+  padding: 1.5em 1.5em 0 1.5em;
   text-align: center;
 `;
 
