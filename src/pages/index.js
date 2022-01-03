@@ -4,9 +4,10 @@ import {
   AboutMeSideBar,
   AboutMeContent,
   SideBarImg,
-  AboutMeHeading,
+  AboutMeHeading
 } from "./PageElements";
 import selfPortrait from "../assets/SelfPotrait.jpg";
+
 const Index = () => {
   return (
     <AboutMeContainer>

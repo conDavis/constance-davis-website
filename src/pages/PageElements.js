@@ -91,7 +91,7 @@ export const ResumeContainer = styled.div`
 /* Contact */
 
 export const ContactContainer = styled.div`
-  
+
   text-align: center;
   background-color: #EAF4CE;
   width: 30%;
@@ -104,7 +104,6 @@ export const ContactHeader = styled.h1`
   float: right;
   margin-left: -12px;
 `;
-
 
 
 export const ContactLogo = styled.img`
@@ -121,7 +120,7 @@ export const ContactList = styled.ul`
   padding-left: 1em;
   text-indent: -1em;
   font-size: 25px;
-  
+
 `;
 
 export const ContactLi = styled.li`
@@ -136,8 +135,4 @@ export const ContactIcon = styled.img`
 `;
 
 
-/* Software */
 
-export const SoftwareContainer = styled.div`
-  padding: 0 1em 0 1em;
-`;
