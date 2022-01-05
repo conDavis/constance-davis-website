@@ -5,8 +5,8 @@ import {
   RandomPiece,
   PieceContainer,
   ArtButton,
-} from "./PageElements";
-import ConLoader from "../components/Loader";
+} from "./ArtElements";
+import ConLoader from "../../components/Loader";
 
 const Art = () => {
   const [isFetchingData, setIsFetchingData] = useState(false);
@@ -82,6 +82,7 @@ const Art = () => {
         <PieceContainer>
           {!isImageLoaded && <ConLoader />}
           {!isFetchingData && <ArtScreen />}
+          <br />
           {isImageLoaded ? <ArtTitle /> : <p>fetching...</p>}
         </PieceContainer>
       </ArtContent>
