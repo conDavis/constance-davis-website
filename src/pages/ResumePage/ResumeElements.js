@@ -1,4 +1,4 @@
-/* Elements for Resume Page */
+/* Elements for Resume Page.*/
 
 import styled from "styled-components";
 

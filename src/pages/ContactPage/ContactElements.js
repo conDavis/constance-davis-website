@@ -1,4 +1,4 @@
-/* Elements for Contact Page */
+/* Elements for Contact Page.*/
 
 import styled from "styled-components";
 

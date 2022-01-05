@@ -1,11 +1,10 @@
 import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
-import ComponentConstants from "../../constants/componentConstants";
 
 export const Nav = styled.nav`
   background: #f6ecf6;
-  height: ${ComponentConstants.NAV_HEIGHT}px;
+  height: 76px;
   display: flex;
   position: sticky;
   top: 0;

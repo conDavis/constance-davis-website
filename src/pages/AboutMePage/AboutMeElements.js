@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-/* About Me */
+/* Elements for About Me Page.*/
 
 export const AboutMeContainer = styled.div`
   display: flex;

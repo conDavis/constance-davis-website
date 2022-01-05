@@ -52,7 +52,7 @@ const Contact = () => {
           style={{
             fontSize: "40px",
             marginRight: "14px",
-            paddingLeft: "28px",
+            paddingLeft: "26px",
             verticalAlign: "bottom",
           }}
         />

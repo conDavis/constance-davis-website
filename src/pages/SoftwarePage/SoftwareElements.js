@@ -1,4 +1,4 @@
-/* Elements for Software Page */
+/* Elements for Software Page.*/
 
 import styled from "styled-components";
 

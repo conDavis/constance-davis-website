@@ -5,8 +5,8 @@ import {
   AboutMeContent,
   SideBarImg,
   AboutMeHeading,
-} from "./PageElements";
-import selfPortrait from "../assets/SelfPotrait.jpg";
+} from "./AboutMeElements";
+import selfPortrait from "../../assets/SelfPotrait.jpg";
 
 const Index = () => {
   return (
