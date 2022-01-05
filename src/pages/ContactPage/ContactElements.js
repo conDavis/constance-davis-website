@@ -39,10 +39,3 @@ export const ContactList = styled.ul`
 export const ContactLi = styled.li`
   padding-bottom: 8px;
 `;
-
-export const ContactIcon = styled.img`
-  width: 40px;
-  padding-bottom: 4px;
-  padding-right: 16px;
-  vertical-align: middle;
-`;

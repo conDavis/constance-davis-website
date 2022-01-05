@@ -28,3 +28,10 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.icon {
+  width: 40px;
+  padding-bottom: 4px;
+  padding-right: 16px;
+  vertical-align: bottom;
+}

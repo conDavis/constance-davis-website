@@ -3,13 +3,11 @@ import "./Contact.css";
 import {
   ContactContainer,
   ContactList,
-  ContactIcon,
   ContactLi,
   ContactLogo,
   ContactHeader,
   ContactHeaderContainer,
 } from "./ContactElements";
-import mailIcon from "../../assets/mailIcon.png";
 import phoneIcon from "../../assets/phoneIcon.png";
 import githubIcon from "../../assets/githubIcon.png";
 import linkedInIcon from "../../assets/linkedInIcon.png";
@@ -48,7 +46,16 @@ const Contact = () => {
   const Email = () => {
     return (
       <ContactLi>
-        <ContactIcon src={mailIcon} />
+        <i
+          className="fa fa-envelope-o"
+          aria-hidden="true"
+          style={{
+            fontSize: "40px",
+            marginRight: "14px",
+            paddingLeft: "28px",
+            verticalAlign: "bottom",
+          }}
+        />
         {email}
         <div className="tooltip">
           <ToolTipText />
@@ -61,9 +68,15 @@ const Contact = () => {
   const Phone = () => {
     return (
       <ContactLi>
-        <ContactIcon
+        <img
           src={phoneIcon}
-          style={{ width: "55px", marginLeft: "-8px", paddingRight: "10px" }}
+          style={{
+            width: "55px",
+            marginLeft: "-10px",
+            paddingRight: "10px",
+            verticalAlign: "bottom",
+          }}
+          alt="phone icon"
         />
         631.935.4505
       </ContactLi>
@@ -74,7 +87,7 @@ const Contact = () => {
     return (
       <ContactLi>
         <a href={githubURL} target="_blank">
-          <ContactIcon src={githubIcon} />
+          <img src={githubIcon} className="icon" alt="github logo" />
           conDavis
         </a>
       </ContactLi>
@@ -85,7 +98,7 @@ const Contact = () => {
     return (
       <ContactLi>
         <a href={linkedInURL} target="_blank">
-          <ContactIcon src={linkedInIcon} />
+          <img src={linkedInIcon} className="icon" alt="linkedin logo" />
           Constance Davis
         </a>
       </ContactLi>
