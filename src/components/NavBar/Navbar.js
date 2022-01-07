@@ -2,13 +2,11 @@ import React from "react";
 import {
   Bars,
   Nav,
-  NavIcon,
   NavLink,
   NavLogo,
   NavMenu,
   NavName,
 } from "./NavBarElements";
-import linkedInIcon from "../../assets/linkedInIcon.png";
 import { NavLink as Link } from "react-router-dom";
 
 import logo from "../../assets/conlong3.png";
@@ -59,7 +57,6 @@ const Navbar = () => {
             href="https://www.linkedin.com/in/constanceleedavis/"
             target="_blank"
           >
-            <NavIcon src={linkedInIcon} />
           </a>
 
           {/* Second Nav */}
