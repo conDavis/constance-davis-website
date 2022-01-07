@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Contact.css";
 import {
   ContactContainer,
+  ContactCard,
   ContactList,
   ContactLi,
   ContactLogo,
@@ -9,10 +10,7 @@ import {
   ContactHeaderContainer,
 } from "./ContactElements";
 import phoneIcon from "../../assets/phoneIcon.png";
-import githubIcon from "../../assets/githubIcon.png";
-import linkedInIcon from "../../assets/linkedInIcon.png";
 import conLogo from "../../assets/Con2.png";
-
 const Contact = () => {
   const githubURL = "https://github.com/conDavis";
   const linkedInURL = "https://www.linkedin.com/in/constanceleedavis/";
@@ -87,7 +85,13 @@ const Contact = () => {
     return (
       <ContactLi>
         <a href={githubURL} target="_blank">
-          <img src={githubIcon} className="icon" alt="github logo" />
+          <i className="fa fa-github" aria-hidden="true"
+             style={{
+            fontSize: "50px",
+            marginRight: "14px",
+            paddingLeft: "26px",
+            verticalAlign: "bottom",
+          }}/>
           conDavis
         </a>
       </ContactLi>
@@ -98,7 +102,13 @@ const Contact = () => {
     return (
       <ContactLi>
         <a href={linkedInURL} target="_blank">
-          <img src={linkedInIcon} className="icon" alt="linkedin logo" />
+          <i className="fa fa-linkedin-square" aria-hidden="true"
+             style={{
+               fontSize: "50px",
+               marginRight: "14px",
+               paddingLeft: "26px",
+               verticalAlign: "center",
+             }}/>
           Constance Davis
         </a>
       </ContactLi>
@@ -110,7 +120,8 @@ const Contact = () => {
   }, [isEmailCopied]);
 
   return (
-    <ContactContainer style={areIconsLoaded ? {} : { display: "none" }}>
+    <ContactContainer>
+    <ContactCard style={areIconsLoaded ? {} : { display: "none" }}>
       <ContactHeaderContainer>
         <ContactLogo src={conLogo} onLoad={() => setAreIconsLoaded(true)} />
         <ContactHeader>tact </ContactHeader>
@@ -123,6 +134,7 @@ const Contact = () => {
       </ContactList>
 
       <p>I'd love to talk</p>
+    </ContactCard>
     </ContactContainer>
   );
 };
