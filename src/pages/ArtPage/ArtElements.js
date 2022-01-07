@@ -32,4 +32,9 @@ export const ArtButton = styled.button`
   padding: 4px 4px 4px 4px;
   margin: 4px 4px 4px 4px;
   font-size: 16px;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #ea9dc5;
+  }
 `;

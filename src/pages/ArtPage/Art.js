@@ -14,6 +14,7 @@ const Art = () => {
   const [randomArt, setRandomArt] = useState();
   const [randomArtName, setRandomArtName] = useState();
 
+  const APIGithubURL = "https://github.com/conDavis/art-api";
   const ArtTitle = () => {
     return (
       <p style={{ fontStyle: "italic" }}>
@@ -29,17 +30,15 @@ const Art = () => {
           onClick={() => {
             setIsImageLoaded(false);
             setIsFetchingData(true);
-            debugger;
             fetchArt().then(() => {
               setIsFetchingData(false);
-              debugger;
             });
           }}
         >
           See another random piece
         </ArtButton>
         <ArtButton>See all</ArtButton>
-        <ArtButton>Check Out the API</ArtButton>
+        <a href={APIGithubURL} target="_blank"><ArtButton>Check Out the API</ArtButton></a>
       </>
     );
   };
