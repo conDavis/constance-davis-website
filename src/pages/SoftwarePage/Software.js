@@ -1,5 +1,9 @@
 import React from "react";
-import { SoftwareContainer, MentorshipContainer } from "./SoftwareElements";
+import {
+  SoftwareContainer,
+  MentorshipContainer,
+  ProjectCard,
+} from "./SoftwareElements";
 import visionVoiceIcon from "../../assets/visionVoice.png";
 
 const Software = () => {
@@ -46,13 +50,14 @@ const Software = () => {
           }}
         />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          I was mentored as a young woman in S.T.E.M. and switching to the
+          mentor role has shown me how the relationship can be an incredible
+          learning experience for both parties. Starting September 2021, I have
+          been working one-on-one with female Black/AfroX high school students
+          to facilitate their learning of foundational computer science, and
+          help them to acquire skills in web development. Starting
+          January-February 2022 I will begin leading the mentorship program for
+          a new cohort of 30 students, mentoring and training mentors.
         </p>
       </MentorshipContainer>
     );
@@ -62,6 +67,19 @@ const Software = () => {
     return (
       <div>
         <h1>Projects</h1>
+        <br />
+
+        <div style={{ display: "flex" }}>
+          <ProjectCard style={{ flex: 1 }}>Pyramid Solitaire</ProjectCard>
+          <ProjectCard style={{ flex: 1 }}>Nihilittle Life</ProjectCard>
+          <ProjectCard style={{ flex: 1 }}>Programmable Animator</ProjectCard>
+        </div>
+        <div style={{ display: "flex" }}>
+          <ProjectCard style={{ flex: 1 }}>
+            Presidential Speech Issue Tracking
+          </ProjectCard>
+          <ProjectCard style={{ flex: 1 }}>This Website!</ProjectCard>
+        </div>
       </div>
     );
   };
