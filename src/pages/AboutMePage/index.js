@@ -13,28 +13,38 @@ const Index = () => {
     <AboutMeContainer>
       <AboutMeSideBar>
         <SideBarImg src={selfPortrait} />
-        <p>Self Portrait 2020</p>
+        <p style={{ fontSize: "17px" }}>Self Portrait 2020</p>
       </AboutMeSideBar>
       <AboutMeContent>
         <AboutMeHeading>What I do</AboutMeHeading>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          I'm a software developer pursuing a B.S. in Computer Science at
+          Northeastern University. I have an interest in FullStack Development
+          and I practice design in both Front-End and Back-End Development. I
+          enjoy exploring design patterns and principles, in code, and in
+          self-expression.
         </p>
         <AboutMeHeading>How I work: Motivation and Care</AboutMeHeading>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Whenever I’m making something, I remind myself of my motivation
+          for doing so, as well as reminding myself to be mindful and act with
+          forethought.
+          <br />
+          <br />
+          <b>Motivation</b>
+          <br />
+          What problem or need am I addressing?
+          <br />
+          What do I want the end user to experience?
+          <br />
+          What led me to this project in the first place?
+          <br />
+          <br />
+          <b>Care</b>
+          <br />
+          As I move through the process of design and implementation, I try to
+          do justice to this motivation through care, through working with
+          intention, honesty, effort and curiosity.
         </p>
       </AboutMeContent>
     </AboutMeContainer>
