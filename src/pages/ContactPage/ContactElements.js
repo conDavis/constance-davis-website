@@ -1,8 +1,7 @@
 /* Elements for Contact Page.*/
 
 import styled from "styled-components";
-import bg from "../../assets/maxConCollab.jpg"
-
+import bg from "../../assets/maxConCollab.jpg";
 
 export const ContactContainer = styled.div`
   display: flex;
@@ -50,4 +49,11 @@ export const ContactList = styled.ul`
 
 export const ContactLi = styled.li`
   padding-bottom: 8px;
+`;
+
+export const ContactIcon = styled.i`
+  font-size: ${(props) => props.fontSize};
+  margin-right: 14px;
+  padding-left: 26px;
+  vertical-align: bottom;
 `;

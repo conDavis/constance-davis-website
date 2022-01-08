@@ -5,6 +5,7 @@ import {
   ContactCard,
   ContactList,
   ContactLi,
+  ContactIcon,
   ContactLogo,
   ContactHeader,
   ContactHeaderContainer,
@@ -44,15 +45,10 @@ const Contact = () => {
   const Email = () => {
     return (
       <ContactLi>
-        <i
+        <ContactIcon
           className="fa fa-envelope-o"
           aria-hidden="true"
-          style={{
-            fontSize: "40px",
-            marginRight: "14px",
-            paddingLeft: "26px",
-            verticalAlign: "bottom",
-          }}
+          fontSize="40px"
         />
         {email}
         <div className="tooltip">
@@ -85,13 +81,11 @@ const Contact = () => {
     return (
       <ContactLi>
         <a href={githubURL} target="_blank">
-          <i className="fa fa-github" aria-hidden="true"
-             style={{
-            fontSize: "50px",
-            marginRight: "14px",
-            paddingLeft: "26px",
-            verticalAlign: "bottom",
-          }}/>
+          <ContactIcon
+            className="fa fa-github"
+            aria-hidden="true"
+            fontSize="50px"
+          />
           conDavis
         </a>
       </ContactLi>
@@ -102,39 +96,38 @@ const Contact = () => {
     return (
       <ContactLi>
         <a href={linkedInURL} target="_blank">
-          <i className="fa fa-linkedin-square" aria-hidden="true"
-             style={{
-               fontSize: "50px",
-               marginRight: "14px",
-               paddingLeft: "26px",
-               verticalAlign: "center",
-             }}/>
+          <ContactIcon
+            className="fa fa-linkedin-square"
+            aria-hidden="true"
+            fontSize="45px"
+          />
           Constance Davis
         </a>
       </ContactLi>
     );
   };
 
+  /* clipboard icon interaction handling */
   useEffect(() => {
     isEmailCopied && setTimeout(() => setIsEmailCopied(false), 3000);
   }, [isEmailCopied]);
 
   return (
     <ContactContainer>
-    <ContactCard style={areIconsLoaded ? {} : { display: "none" }}>
-      <ContactHeaderContainer>
-        <ContactLogo src={conLogo} onLoad={() => setAreIconsLoaded(true)} />
-        <ContactHeader>tact </ContactHeader>
-      </ContactHeaderContainer>
-      <ContactList>
-        <Email />
-        <Phone />
-        <Github />
-        <LinkedIn />
-      </ContactList>
+      <ContactCard style={areIconsLoaded ? {} : { display: "none" }}>
+        <ContactHeaderContainer>
+          <ContactLogo src={conLogo} onLoad={() => setAreIconsLoaded(true)} />
+          <ContactHeader>tact </ContactHeader>
+        </ContactHeaderContainer>
+        <ContactList>
+          <Email />
+          <Phone />
+          <Github />
+          <LinkedIn />
+        </ContactList>
 
-      <p>I'd love to talk</p>
-    </ContactCard>
+        <p>I'd love to talk</p>
+      </ContactCard>
     </ContactContainer>
   );
 };
