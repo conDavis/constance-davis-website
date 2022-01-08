@@ -38,7 +38,9 @@ const Art = () => {
           See another random piece
         </ArtButton>
         <ArtButton>See all</ArtButton>
-        <a href={APIGithubURL} target="_blank"><ArtButton>Check Out the API</ArtButton></a>
+        <a href={APIGithubURL} target="_blank">
+          <ArtButton>Check Out the API</ArtButton>
+        </a>
       </>
     );
   };
