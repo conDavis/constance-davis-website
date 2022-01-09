@@ -26,8 +26,8 @@ const Index = () => {
         </p>
         <AboutMeHeading>How I work: Motivation and Care</AboutMeHeading>
         <p>
-          Whenever I’m making something, I remind myself of my motivation
-          for doing so, as well as reminding myself to be mindful and act with
+          Whenever I’m making something, I remind myself of my motivation for
+          doing so, as well as reminding myself to be mindful and act with
           forethought.
           <br />
           <br />
