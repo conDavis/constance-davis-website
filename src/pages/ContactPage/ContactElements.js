@@ -20,6 +20,13 @@ export const ContactCard = styled.div`
   height: 55%;
   margin: 6% auto;
   padding: 16px 32px 32px 32px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 25% 8px 0 12px;
+  }
 `;
 
 export const ContactHeaderContainer = styled.div`

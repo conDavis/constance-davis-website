@@ -11,6 +11,9 @@ export const AboutMeSideBar = styled.div`
   flex: 1;
   background-color: #f1f6f6;
   text-align: center;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const AboutMeContent = styled.div`
@@ -39,5 +42,11 @@ export const AboutMeHeading = styled.h1`
     top: 50%;
     margin-top: -2px;
     margin-left: 10px;
+  }
+
+  @media (max-width: 768px) {
+    &:after {
+      display: none;
+    }
   }
 `;

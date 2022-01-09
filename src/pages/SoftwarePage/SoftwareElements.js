@@ -7,6 +7,14 @@ export const SoftwareContainer = styled.div`
   text-align: center;
 `;
 
+export const SkillsContainer = styled.div`
+  display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 0 8px 0 8px;
+  }
+`;
+
 export const MentorshipContainer = styled.div`
   padding: 0 7.6em 0 5em;
 `;

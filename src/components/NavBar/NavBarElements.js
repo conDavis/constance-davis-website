@@ -35,12 +35,18 @@ export const NavName = styled.p`
   color: #414e1c;
   padding-right: 45%;
   padding-left: 8px;
+  @media (max-width: 768px) {
+    padding-right: 25%;
+  }
 `;
 
 export const NavLogo = styled.img`
   height: 96px;
   padding-top: 12px;
   overflow: visible;
+  @media (max-width: 768px) {
+    padding-left: 8px;
+  }
 `;
 
 export const Bars = styled(FaBars)`

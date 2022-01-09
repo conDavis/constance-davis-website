@@ -3,6 +3,7 @@ import {
   SoftwareContainer,
   MentorshipContainer,
   ProjectCard,
+  SkillsContainer,
 } from "./SoftwareElements";
 import visionVoiceIcon from "../../assets/visionVoice.png";
 
@@ -86,11 +87,11 @@ const Software = () => {
 
   return (
     <SoftwareContainer>
-      <div style={{ display: "flex" }}>
+      <SkillsContainer>
         <FEDevSection />
         <BEDevSection />
         <ToolsSection />
-      </div>
+      </SkillsContainer>
       <MentorshipSection />
       <ProjectsSection />
     </SoftwareContainer>

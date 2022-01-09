@@ -13,6 +13,10 @@ export const ArtContent = styled.div`
   background-color: #f3f9f4;
   margin: 0 auto;
   text-align: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const PieceContainer = styled.div`
