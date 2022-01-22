@@ -56,8 +56,7 @@ const Navbar = () => {
           <a
             href="https://www.linkedin.com/in/constanceleedavis/"
             target="_blank"
-          >
-          </a>
+          ></a>
 
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
