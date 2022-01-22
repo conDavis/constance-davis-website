@@ -118,10 +118,10 @@ const Art = () => {
           {!isImageLoaded && <ConLoader />}
           {!isFetchingData && <RandoArtScreen />}
           <br />
-          {isImageLoaded ? ArtTitle(randomArtName) : <p>fetching...</p>}
+          {isImageLoaded ? ArtTitle(randomArtName) : <p style={{paddingBottom: "25%"}}>fetching...</p>}
         </PieceContainer>
         <a id="all_works" />
-        {!isFetchingData && (
+        {isImageLoaded && (
           <div
             style={{
               padding: "16px 0 32px 0",

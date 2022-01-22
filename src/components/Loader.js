@@ -9,6 +9,7 @@ const ConLoader = () => {
       height={80}
       width={80}
       style={{ paddingTop: "10%" }}
+
     />
   );
 };
