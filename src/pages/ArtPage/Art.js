@@ -40,7 +40,7 @@ const Art = () => {
         >
           See another random piece
         </ArtButton>
-        <a href="#/art/all_works">
+        <a href="/all_works">
           <ArtButton>See all</ArtButton>
         </a>
         <a href={APIGithubURL} target="_blank">

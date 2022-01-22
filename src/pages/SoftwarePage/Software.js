@@ -156,7 +156,7 @@ const Software = () => {
             <p>
               React app in HTML and JavaScript using functional components,
               react hooks, and{" "}
-              <a href="https://styled-components.com/">styled components</a>.
+              <a href="https://styled-components.com/" target="_blank">styled components</a>.
               <br/>
               <br/>
               <a href="https://github.com/conDavis/constance-davis-website" target="_blank">Check out the repo.</a>
