@@ -10,6 +10,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.main {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  overflow-y: auto;
+  width: 100%;
+}
+
 h1 {
   font-size: 50px;
   font-weight: normal;
@@ -23,12 +31,18 @@ p {
 }
 
 a {
-  color : inherit;
+  color: #a56cd4;
   text-decoration: none;
 }
 
 a:hover {
-  color: #BA0C5F;
+  color: #ba0c5f;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 18px;
+  }
 }
 
 code {

@@ -3,7 +3,8 @@
 import styled from "styled-components";
 
 export const SoftwareContainer = styled.div`
-  padding: 1.5em 1.5em 0 1.5em;
+  padding: 2.5em 1.5em 1.5em 1.5em;
+  margin-bottom: 2em;
   text-align: center;
 `;
 
@@ -23,5 +24,7 @@ export const ProjectCard = styled.div`
   width: 10%;
   height: 100%;
   background-color: #eaf4ce;
+  padding: 16px 16px 4px 16px;
   margin: 8px 16px 4px 16px;
+  color: black;
 `;

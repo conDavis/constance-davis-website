@@ -12,15 +12,17 @@ function App() {
   return (
     <Router>
       <Navbar sticky="top" />
-      <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/software" element={<Software />} />
-        <Route path="/art" element={<Art />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/resume" element={<Resume />}>
-          Resume
-        </Route>
-      </Routes>
+      <div className="main">
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/software" element={<Software />} />
+          <Route path="/art" element={<Art />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />}>
+            Resume
+          </Route>
+        </Routes>
+      </div>
     </Router>
   );
 }

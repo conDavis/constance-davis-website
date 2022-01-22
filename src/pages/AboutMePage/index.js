@@ -19,32 +19,30 @@ const Index = () => {
         <AboutMeHeading>What I do</AboutMeHeading>
         <p>
           I'm a software developer pursuing a B.S. in Computer Science at
-          Northeastern University. I have an interest in FullStack Development
-          and I practice design in both Front-End and Back-End Development. I
+          Northeastern University. I have an interest in full stack development
+          and I practice design in both front-end and back-end development. I
           enjoy exploring design patterns and principles, in code, and in
           self-expression.
         </p>
-        <AboutMeHeading>How I work: Motivation and Care</AboutMeHeading>
+        <AboutMeHeading>How I work: Forethought and Curiosity</AboutMeHeading>
         <p>
-          Whenever I’m making something, I remind myself of my motivation for
-          doing so, as well as reminding myself to be mindful and act with
-          forethought.
+          I try to work as mindfully as possible. In order to ensure this,
+          whenever I make something :{" "}
+        </p>
+
+        <p>
+          I make an effort to honor my motivation for doing so, through acting
+          with intention, and with reusability and readability in mind.
           <br />
+          <b>(Forethought)</b>
+        </p>
+        <p>
+          I make an effort to honor myself by approaching the task with
+          curiosity and humility. This allows me to take roadblocks in stride,
+          and savor opportunities to learn and absorb information which will
+          help me build better next time.
           <br />
-          <b>Motivation</b>
-          <br />
-          What problem or need am I addressing?
-          <br />
-          What do I want the end user to experience?
-          <br />
-          What led me to this project in the first place?
-          <br />
-          <br />
-          <b>Care</b>
-          <br />
-          As I move through the process of design and implementation, I try to
-          do justice to this motivation through care, through working with
-          intention, honesty, effort and curiosity.
+          <b>(Curiosity)</b>
         </p>
       </AboutMeContent>
     </AboutMeContainer>

@@ -5,7 +5,7 @@ import bg from "../../assets/maxConCollab.jpg";
 
 export const ContactContainer = styled.div`
   display: flex;
-  height: ${window.screen.availHeight}px;
+  height: 100%;
   background-image: url(${bg});
   background-color: #ffbadc;
   background-repeat: no-repeat;
@@ -17,15 +17,14 @@ export const ContactCard = styled.div`
   text-align: center;
   background-color: #eaf4ce;
   width: 30%;
-  height: 55%;
-  margin: 6% auto;
-  padding: 16px 32px 32px 32px;
+  margin: 7% auto;
+  padding: 8px 32px 0 32px;
 
   @media (max-width: 768px) {
     width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 25% 8px 0 12px;
+    height: 60%;
+    margin-top: 30%;
+    padding: 10% 8px 0 12px;
   }
 `;
 
@@ -42,6 +41,9 @@ export const ContactLogo = styled.img`
   width: 100px;
   margin-top: 1em;
   float: left;
+  @media (max-width: 768px) {
+    margin-top: 8px;
+  }
 `;
 
 export const ContactList = styled.ul`
@@ -52,6 +54,9 @@ export const ContactList = styled.ul`
   padding-left: 1em;
   text-indent: -1em;
   font-size: 25px;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const ContactLi = styled.li`
@@ -63,4 +68,5 @@ export const ContactIcon = styled.i`
   margin-right: 14px;
   padding-left: 26px;
   vertical-align: bottom;
+  color: black !important;
 `;

@@ -4,11 +4,17 @@ import styled from "styled-components";
 
 export const AboutMeContainer = styled.div`
   display: flex;
-  height: ${window.screen.availHeight}px;
+  height: 100%;
+  @media (max-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    overflow-y: auto;
+  }
 `;
 
 export const AboutMeSideBar = styled.div`
   flex: 1;
+  padding-top: 3%;
   background-color: #f1f6f6;
   text-align: center;
   @media (max-width: 768px) {
@@ -19,7 +25,7 @@ export const AboutMeSideBar = styled.div`
 export const AboutMeContent = styled.div`
   flex: 3;
   padding-left: 4%;
-  padding-top: 3%;
+  padding-top: 4%;
   padding-right: 5%;
 `;
 

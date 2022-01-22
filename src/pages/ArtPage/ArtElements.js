@@ -3,8 +3,8 @@
 import styled from "styled-components";
 
 export const ArtContainer = styled.div`
-  height: ${window.screen.availHeight}px;
   display: flex;
+  padding: 24px 16px 4px 16px;
 `;
 
 export const ArtContent = styled.div`
@@ -25,8 +25,13 @@ export const PieceContainer = styled.div`
 `;
 
 export const RandomPiece = styled.img`
-  max-width: 65%;
-  max-height: 55%;
+  max-width: calc(${window.screen.availWidth}px / 2);
+  max-height: calc(${window.screen.availHeight}px * 0.6);
+`;
+
+export const GalleryPiece = styled.img`
+  max-width: calc(${window.screen.availWidth}px * 0.7);
+  max-height: calc(${window.screen.availHeight}px * 0.7);
 `;
 
 export const ArtButton = styled.button`

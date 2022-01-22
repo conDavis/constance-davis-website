@@ -5,6 +5,7 @@ import {
   RandomPiece,
   PieceContainer,
   ArtButton,
+  GalleryPiece,
 } from "./ArtElements";
 import ConLoader from "../../components/Loader";
 
@@ -12,13 +13,15 @@ const Art = () => {
   const [isFetchingData, setIsFetchingData] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const [randomArt, setRandomArt] = useState();
+  const [allArt, setAllArt] = useState([]);
+  const [isGalleryLoaded, setIsGalleryLoaded] = useState(false);
   const [randomArtName, setRandomArtName] = useState();
 
   const APIGithubURL = "https://github.com/conDavis/art-api";
-  const ArtTitle = () => {
+  const ArtTitle = (title) => {
     return (
-      <p style={{ fontStyle: "italic" }}>
-        <b>{randomArtName}</b>
+      <p style={{ fontStyle: "italic", marginTop: "8px" }}>
+        <b>{title}</b>
       </p>
     );
   };
@@ -30,21 +33,23 @@ const Art = () => {
           onClick={() => {
             setIsImageLoaded(false);
             setIsFetchingData(true);
-            fetchArt().then(() => {
+            fetchRandoArt().then(() => {
               setIsFetchingData(false);
             });
           }}
         >
           See another random piece
         </ArtButton>
-        <ArtButton>See all</ArtButton>
+        <a href="#all_works">
+          <ArtButton>See all</ArtButton>
+        </a>
         <a href={APIGithubURL} target="_blank">
           <ArtButton>Check Out the API</ArtButton>
         </a>
       </>
     );
   };
-  const ArtScreen = () => {
+  const RandoArtScreen = () => {
     return (
       <>
         <RandomPiece
@@ -59,7 +64,7 @@ const Art = () => {
     );
   };
 
-  const fetchArt = async () => {
+  const fetchRandoArt = async () => {
     await fetch("https://secret-basin-38348.herokuapp.com/random")
       .then((response) => response.json())
       .then((data) => {
@@ -69,23 +74,84 @@ const Art = () => {
       .catch((error) => console.log(error.message));
   };
 
+  const fetchAllArt = async () => {
+    await fetch("https://secret-basin-38348.herokuapp.com/all")
+      .then((response) => response.json())
+      .then((data) => {
+        setAllArt(data);
+      })
+      .catch((error) => console.log(error.message));
+  };
+
   useEffect(() => {
     setIsFetchingData(true);
-    fetchArt().then(() => {
+    fetchRandoArt().then(() => {
       setIsFetchingData(false);
+      debugger;
     });
   }, []);
+
+  useEffect(() => {
+    fetchAllArt().then(() => setIsGalleryLoaded(true));
+  }, [isFetchingData]);
+
+  const Piece = (name, source) => {
+    return (
+      <div>
+        <RandomPiece
+          src={source}
+          alt={`Random Art at ${source}`}
+          style={isImageLoaded ? {} : { display: "none" }}
+          key={name}
+        />
+        <h2>${name}</h2>
+      </div>
+    );
+  };
 
   return (
     <ArtContainer>
       <ArtContent>
+        <a id="top" />
         <h1>Random Piece Generator</h1>
         <PieceContainer>
           {!isImageLoaded && <ConLoader />}
-          {!isFetchingData && <ArtScreen />}
+          {!isFetchingData && <RandoArtScreen />}
           <br />
-          {isImageLoaded ? <ArtTitle /> : <p>fetching...</p>}
+          {isImageLoaded ? ArtTitle(randomArtName) : <p>fetching...</p>}
         </PieceContainer>
+        <a id="all_works" />
+        {!isFetchingData && (
+          <div
+            style={{
+              padding: "16px 0 32px 0",
+              backgroundColor: "#85ab8c",
+              color: "#F3F9F4",
+            }}
+          >
+            <h1>All Works</h1>
+            {isGalleryLoaded &&
+              allArt.map((galleryPiece) => (
+                <div
+                  style={{
+                    padding: "24px 4px 4px 16px",
+                    backgroundColor: "#F3F9F4",
+                    color: "#85ab8c",
+                  }}
+                >
+                  <GalleryPiece
+                    src={galleryPiece.url}
+                    alt={`Art at ${galleryPiece.url}`}
+                    key={name}
+                  />
+                  {ArtTitle(galleryPiece.name)}
+                </div>
+              ))}
+            <a href="#top">
+              <p>Back To Top</p>
+            </a>
+          </div>
+        )}
       </ArtContent>
     </ArtContainer>
   );

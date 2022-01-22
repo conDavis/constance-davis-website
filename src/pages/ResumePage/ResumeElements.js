@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 export const ResumeIframe = styled.iframe`
   flex: 1;
-  overflow: hidden;
-  height: ${window.screen.availHeight}px;
+  height: calc(${window.screen.availHeight}px - 157px);
+  margin-top: 2em;
 `;
 
 export const ResumeContainer = styled.div`
