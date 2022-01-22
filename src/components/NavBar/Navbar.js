@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <Link to="/constance-davis-website/" className={({ isActive }) => (isActive ? "active" : "")}>
+        <Link to="/" className={({ isActive }) => (isActive ? "active" : "")}>
           <NavLogo src={logo} alt="Logo" />
         </Link>
 
@@ -24,39 +24,36 @@ const Navbar = () => {
 
         <NavMenu>
           <NavLink
-            to="/constance-davis-website/"
+            to="/"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             About Me
           </NavLink>
           <NavLink
-            to="/constance-davis-website/software"
+            to="/software"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Software
           </NavLink>
           <NavLink
-            to="/constance-davis-website/art"
+            to="/art"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Art
           </NavLink>
           <NavLink
-            to="/constance-davis-website/resume"
+            to="/resume"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Resume
           </NavLink>
           <NavLink
-            to="/constance-davis-website/contact"
+            to="/contact"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Contact
           </NavLink>
-          <a
-            href="https://www.linkedin.com/in/constanceleedavis/"
-            target="_blank"
-          ></a>
+
 
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
