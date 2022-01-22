@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <Link to="/" className={({ isActive }) => (isActive ? "active" : "")}>
+        <Link to="/constance-davis-website" className={({ isActive }) => (isActive ? "active" : "")}>
           <NavLogo src={logo} alt="Logo" />
         </Link>
 
@@ -24,7 +24,7 @@ const Navbar = () => {
 
         <NavMenu>
           <NavLink
-            to="/"
+            to="/constance-davis-website"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             About Me
