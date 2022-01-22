@@ -24,7 +24,7 @@ const Navbar = () => {
 
         <NavMenu>
           <NavLink
-            to="/constance-davis-website"
+            to="/constance-davis-website/"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             About Me
