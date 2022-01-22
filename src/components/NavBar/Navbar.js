@@ -30,25 +30,25 @@ const Navbar = () => {
             About Me
           </NavLink>
           <NavLink
-            to="/software"
+            to="/constance-davis-website/software"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Software
           </NavLink>
           <NavLink
-            to="/art"
+            to="/constance-davis-website/art"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Art
           </NavLink>
           <NavLink
-            to="/resume"
+            to="/constance-davis-website/resume"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Resume
           </NavLink>
           <NavLink
-            to="/contact"
+            to="/constance-davis-website/contact"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Contact
