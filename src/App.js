@@ -14,7 +14,7 @@ function App() {
       <Navbar sticky="top" />
       <div className="main">
         <Routes>
-          <Route path="/constance-davis-website" exact element={<Home />} />
+          <Route path="/constance-davis-website/" exact element={<Home />} />
           <Route path="/software" element={<Software />} />
           <Route path="/art" element={<Art />} />
           <Route path="/contact" element={<Contact />} />

@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <Link to="/constance-davis-website" className={({ isActive }) => (isActive ? "active" : "")}>
+        <Link to="/constance-davis-website/" className={({ isActive }) => (isActive ? "active" : "")}>
           <NavLogo src={logo} alt="Logo" />
         </Link>
 
