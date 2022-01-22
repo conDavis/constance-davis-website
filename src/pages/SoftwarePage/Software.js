@@ -104,7 +104,7 @@ const Software = () => {
               constant, you end up just fine :)
               <br />
               <br />
-              <a href="https://github.com/maxpinheiro/nihilittle-life">
+              <a href="https://github.com/maxpinheiro/nihilittle-life" target="_blank">
                 <img src={nihilittleIcon} height="80px" alt ="nihilittle life icons"/>
                 <br />
                 Check out our repo.
@@ -122,12 +122,7 @@ const Software = () => {
               Java Swing animation, or an SVG output.
               <br />
               <br />
-              <a
-                href="https://github.com/rmcohen20/Simple-Animator"
-                target="_blank"
-              >
-                Check out our repo.
-              </a>
+              Code available upon request.
               <br />
             </p>
           </ProjectCard>
@@ -162,6 +157,9 @@ const Software = () => {
               React app in HTML and JavaScript using functional components,
               react hooks, and{" "}
               <a href="https://styled-components.com/">styled components</a>.
+              <br/>
+              <br/>
+              <a href="https://github.com/conDavis/constance-davis-website" target="_blank">Check out the repo.</a>
             </p>
           </ProjectCard>
         </div>

@@ -40,7 +40,7 @@ const Art = () => {
         >
           See another random piece
         </ArtButton>
-        <a href="#all_works">
+        <a href="#/art/all_works">
           <ArtButton>See all</ArtButton>
         </a>
         <a href={APIGithubURL} target="_blank">
@@ -112,7 +112,7 @@ const Art = () => {
   return (
     <ArtContainer>
       <ArtContent>
-        <a id="top" />
+        <a id="#/art/top" />
         <h1>Random Piece Generator</h1>
         <PieceContainer>
           {!isImageLoaded && <ConLoader />}
@@ -120,7 +120,7 @@ const Art = () => {
           <br />
           {isImageLoaded ? ArtTitle(randomArtName) : <p style={{paddingBottom: "25%"}}>fetching...</p>}
         </PieceContainer>
-        <a id="all_works" />
+        <a id="#/art/all_works" />
         {isImageLoaded && (
           <div
             style={{
@@ -147,7 +147,7 @@ const Art = () => {
                   {ArtTitle(galleryPiece.name)}
                 </div>
               ))}
-            <a href="#top">
+            <a href="#/art">
               <p>Back To Top</p>
             </a>
           </div>
