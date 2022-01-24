@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { HashLink as Link } from 'react-router-hash-link';
 import {
   ArtContainer,
   ArtContent,
@@ -40,9 +41,9 @@ const Art = () => {
         >
           See another random piece
         </ArtButton>
-        <a href="/all_works">
+        <Link to="/art#all_works">
           <ArtButton>See all</ArtButton>
-        </a>
+        </Link>
         <a href={APIGithubURL} target="_blank">
           <ArtButton>Check Out the API</ArtButton>
         </a>
@@ -112,7 +113,7 @@ const Art = () => {
   return (
     <ArtContainer>
       <ArtContent>
-        <a id="#/art/top" />
+        <a id="top" />
         <h1>Random Piece Generator</h1>
         <PieceContainer>
           {!isImageLoaded && <ConLoader />}
@@ -120,7 +121,7 @@ const Art = () => {
           <br />
           {isImageLoaded ? ArtTitle(randomArtName) : <p style={{paddingBottom: "25%"}}>fetching...</p>}
         </PieceContainer>
-        <a id="#/art/all_works" />
+        <a id="all_works" />
         {isImageLoaded && (
           <div
             style={{
@@ -129,7 +130,8 @@ const Art = () => {
               color: "#F3F9F4",
             }}
           >
-            <h1>All Works</h1>
+
+              <h1>All Works</h1>
             {isGalleryLoaded &&
               allArt.map((galleryPiece) => (
                 <div
@@ -147,9 +149,9 @@ const Art = () => {
                   {ArtTitle(galleryPiece.name)}
                 </div>
               ))}
-            <a href="#/art">
+            <Link to="/art#top">
               <p>Back To Top</p>
-            </a>
+            </Link>
           </div>
         )}
       </ArtContent>
