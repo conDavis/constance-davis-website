@@ -20,7 +20,7 @@ const Index = () => {
         <p>
           I'm a software developer pursuing a B.S. in Computer Science at
           Northeastern University. I have an interest in full stack development
-          and I practice design in both front-end and back-end development. I
+          and I work in both front-end and back-end development. I
           enjoy exploring design patterns and principles, in code, and in
           self-expression.
         </p>
