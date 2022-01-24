@@ -16,7 +16,7 @@ export const ContactContainer = styled.div`
 export const ContactCard = styled.div`
   text-align: center;
   background-color: #eaf4ce;
-  width: 30%;
+  width: 35%;
   margin: 7% auto;
   padding: 8px 32px 0 32px;
 
@@ -39,7 +39,7 @@ export const ContactHeader = styled.h1`
 
 export const ContactLogo = styled.img`
   width: 100px;
-  margin-top: 1em;
+  margin-top: 1.5em;
   float: left;
   @media (max-width: 768px) {
     margin-top: 8px;
