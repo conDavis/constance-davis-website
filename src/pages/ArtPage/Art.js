@@ -86,10 +86,11 @@ const Art = () => {
 
   useEffect(() => {
     setIsFetchingData(true);
+    const fetchArt = async () => {
     fetchRandoArt().then(() => {
       setIsFetchingData(false);
-      debugger;
-    });
+    });};
+    fetchArt();
   }, []);
 
   useEffect(() => {

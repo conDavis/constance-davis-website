@@ -71,6 +71,7 @@ const Contact = () => {
             verticalAlign: "bottom",
           }}
           alt="phone icon"
+          onLoad={() => setAreIconsLoaded(true)}
         />
         631.935.4505
       </ContactLi>
@@ -116,7 +117,7 @@ const Contact = () => {
     <ContactContainer>
       <ContactCard style={areIconsLoaded ? {} : { display: "none" }}>
         <ContactHeaderContainer>
-          <ContactLogo src={conLogo} onLoad={() => setAreIconsLoaded(true)} />
+          <ContactLogo src={conLogo} />
           <ContactHeader>tact </ContactHeader>
         </ContactHeaderContainer>
         <ContactList>
