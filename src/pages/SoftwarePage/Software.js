@@ -61,9 +61,9 @@ const Software = () => {
           fundamentals with my mentees. Starting in September 2021, I have been
           working one-on-one with female Black/AfroX high school students to
           facilitate their learning of foundational computer science, and help
-          them to acquire skills in web development. Starting January-February
+          them to acquire skills in web development. Starting February
           2022 I will begin leading the mentorship program for a new cohort of
-          30 students, mentoring and training mentors.
+          30 students.
         </p>
       </MentorshipContainer>
     );
@@ -82,7 +82,7 @@ const Software = () => {
             </h2>
             <p>
               Implemented a pyramid solitaire game algorithm in Java with Java
-              Swing visuals. Redeveloped my application into a React App using
+              Swing visuals. Redeveloped my application into a Web App using
               typescript and HTML to make playable online,
               <a
                 href="https://condavis.github.io/PyramidSolitaire/"
