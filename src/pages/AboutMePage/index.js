@@ -31,8 +31,9 @@ const Index = () => {
         </p>
 
         <p>
-          I make an effort to honor my motivation for doing so, through acting
-          with intention, and with reusability and readability in mind.
+          I make an effort to honor my motivation for doing so through acting
+          with intention, and with reusability and readability in mind. I want
+          to make code that can and will stick around.
           <br />
           <b>(Forethought)</b>
         </p>
