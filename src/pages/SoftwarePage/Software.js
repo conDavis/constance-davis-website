@@ -56,13 +56,14 @@ const Software = () => {
           />
         </a>
         <p>
-          Mentorship is extremely important to me, it guided me as a young woman
-          in STEM, and it brings me joy and sharpens my skills to work through
-          fundamentals with my mentees. Starting in September 2021, I have been
-          working one-on-one with female Black/AfroX high school students to
-          facilitate their learning of foundational computer science, and help
-          them to acquire skills in web development. Starting February
-          2022 I will begin leading the mentorship program for a new cohort of
+          Mentorship is extremely important to me. As a young woman
+          in STEM being mentored has been invaluable, and now the mentoring
+          I do with my mentees both  brings me joy and sharpens my skills.
+          In September 2021 I  began working one-on-one with female Black/AfroX
+          high school students to facilitate their learning of foundational
+          computer science and to help them acquire skills in web development.
+          In February 2022 I will begin leading the mentorship program for
+          a new cohort of
           30 students.
         </p>
       </MentorshipContainer>

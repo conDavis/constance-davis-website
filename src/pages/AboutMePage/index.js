@@ -21,7 +21,7 @@ const Index = () => {
           I'm a software developer pursuing a B.S. in Computer Science at
           Northeastern University. I have an interest in full stack development
           and I work in both front-end and back-end development. I
-          enjoy exploring design patterns and principles, in code, and in
+          enjoy exploring design patterns and principles in code, as well as in
           self-expression.
         </p>
         <AboutMeHeading>How I work: Forethought and Curiosity</AboutMeHeading>
@@ -31,19 +31,17 @@ const Index = () => {
         </p>
 
         <p>
-          I make an effort to honor my motivation for doing so through acting
-          with intention, and with reusability and readability in mind. I want
-          to make code that can and will stick around.
+          I honor my motivation for doing so through acting
+          with intention, and with reusability and readability in mind. I strive to create code that
+          will endure through time.
           <br />
-          <b>(Forethought)</b>
         </p>
         <p>
-          I make an effort to honor myself by approaching the task with
+          I honor myself by approaching the task at hand with
           curiosity and humility. This allows me to take roadblocks in stride,
           and savor opportunities to learn and absorb information which will
           help me build better next time.
           <br />
-          <b>(Curiosity)</b>
         </p>
       </AboutMeContent>
     </AboutMeContainer>
