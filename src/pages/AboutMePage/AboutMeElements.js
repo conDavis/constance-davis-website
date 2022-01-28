@@ -25,7 +25,7 @@ export const AboutMeSideBar = styled.div`
 export const AboutMeContent = styled.div`
   flex: 3;
   padding-left: 4%;
-  padding-top: 4%;
+  padding-top: 5%;
   padding-right: 5%;
 `;
 
