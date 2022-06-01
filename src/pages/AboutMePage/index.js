@@ -26,18 +26,16 @@ const Index = () => {
         </p>
         <AboutMeHeading>How I work: Forethought and Curiosity</AboutMeHeading>
         <p>
-          I try to work as mindfully as possible. In order to ensure this,
-          whenever I make something :{" "}
+          I try to work as mindfully as possible. Whenever I make something :{" "}
         </p>
 
         <p>
-          I honor my motivation for doing so through acting
-          with intention, and with reusability and readability in mind. I strive to create code that
-          will endure through time.
+          I remind myself often to revisit my intentions. I work with with reusability and readability in mind. I strive to create code that
+          will endure through time. I want the user, be they developer or customer, to feel their needs were intuited.
           <br />
         </p>
         <p>
-          I honor myself by approaching the task at hand with
+          I approach the task at hand with
           curiosity and humility. This allows me to take roadblocks in stride,
           and savor opportunities to learn and absorb information which will
           help me build better next time.

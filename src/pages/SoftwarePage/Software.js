@@ -119,7 +119,7 @@ const Software = () => {
             <p>
               Collaborated with my peer Rachel Cohen to create a simple
               programmable animator that can take forms of textual or SVG input
-              and output animations in the form of a textual representation, a
+              and output animations in the form of a text representation, a
               Java Swing animation, or an SVG output.
               <br />
               <br />
