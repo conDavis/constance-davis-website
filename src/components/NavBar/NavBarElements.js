@@ -36,7 +36,8 @@ export const NavName = styled.p`
   padding-right: 45%;
   padding-left: 8px;
   @media (max-width: 768px) {
-    padding-right: 25%;
+    padding-right: 20%;
+    padding-top: 10px;
   }
 `;
 
@@ -45,7 +46,7 @@ export const NavLogo = styled.img`
   padding-top: 12px;
   overflow: visible;
   @media (max-width: 768px) {
-    padding-left: 8px;
+    padding-left: 20%;
   }
 `;
 
@@ -60,6 +61,7 @@ export const Bars = styled(FaBars)`
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
+    padding-top: 8px;
   }
 `;
 
@@ -86,6 +88,8 @@ export const NavBtn = styled.nav`
 width: 100vw; */
   @media screen and (max-width: 768px) {
     display: none;
+    padding-top: 10px;
+
   }
 `;
 

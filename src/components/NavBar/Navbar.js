@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
   Bars,
   Nav,
@@ -11,6 +11,7 @@ import { NavLink as Link } from "react-router-dom";
 
 import logo from "../../assets/conlong3.png";
 const Navbar = () => {
+  const [isDropdownVisible, setIsDropdownVisible] = new useState(false);
   return (
     <>
       <Nav>
@@ -20,7 +21,50 @@ const Navbar = () => {
 
         <NavName>Constance Davis</NavName>
 
-        <Bars />
+        <Bars onClick={() => setIsDropdownVisible(!isDropdownVisible)}/>
+        {isDropdownVisible &&
+        <ul className="dropdown">
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              About Me
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/software"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Software
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/art"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Art
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/resume"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Resume
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Contact
+            </NavLink>
+          </li>
+        </ul>}
 
         <NavMenu>
           <NavLink

@@ -65,6 +65,8 @@ const Art = () => {
     );
   };
 
+  
+
   const fetchRandoArt = async () => {
     await fetch("https://secret-basin-38348.herokuapp.com/random")
       .then((response) => response.json())
