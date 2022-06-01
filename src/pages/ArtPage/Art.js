@@ -143,6 +143,7 @@ const Art = () => {
                     backgroundColor: "#F3F9F4",
                     color: "#85ab8c",
                   }}
+                  key={galleryPiece.name}
                 >
                   <GalleryPiece
                     src={galleryPiece.url}
