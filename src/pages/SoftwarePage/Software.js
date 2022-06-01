@@ -4,6 +4,8 @@ import {
   MentorshipContainer,
   ProjectCard,
   SkillsContainer,
+  MentorshipLogo,
+  ProjectContainer,
 } from "./SoftwareElements";
 import visionVoiceIcon from "../../assets/visionVoice.png";
 import nihilittleIcon from "../../assets/nihilittleLifeIcon.png";
@@ -44,14 +46,9 @@ const Software = () => {
       <MentorshipContainer>
         <h1>Mentorship</h1>
         <a href="https://www.visionvoiceinc.org/" target="_blank">
-          <img
+          <MentorshipLogo
             src={visionVoiceIcon}
             alt="vision voice icon"
-            style={{
-              width: "200px",
-              float: "left",
-              paddingRight: "24px",
-            }}
             onLoad={() => setIsIconLoaded(true)}
           />
         </a>
@@ -59,12 +56,11 @@ const Software = () => {
           Mentorship is extremely important to me. As a young woman
           in STEM being mentored has been invaluable, and now the mentoring
           I do with my mentees both  brings me joy and sharpens my skills.
-          In September 2021 I  began working one-on-one with female Black/AfroX
-          high school students to facilitate their learning of foundational
+          In September 2021 I joined <a href="https://www.visionvoiceinc.org/" target="_blank">
+            VisionVoice</a>, and
+          began working one-on-one with female Black/AfroX
+          students to facilitate their learning of foundational
           computer science and to help them acquire skills in web development.
-          In February 2022 I will begin leading the mentorship program for
-          a new cohort of
-          30 students.
         </p>
       </MentorshipContainer>
     );
@@ -76,7 +72,7 @@ const Software = () => {
         <h1>Projects</h1>
         <br />
 
-        <div style={{ display: "flex" }}>
+        <ProjectContainer>
           <ProjectCard style={{ flex: 1 }}>
             <h2>
               <b>Pyramid Solitaire</b>
@@ -127,7 +123,7 @@ const Software = () => {
               <br />
             </p>
           </ProjectCard>
-        </div>
+        </ProjectContainer>
         <div style={{ display: "flex" }}>
           <ProjectCard style={{ flex: 1 }}>
             <h2>

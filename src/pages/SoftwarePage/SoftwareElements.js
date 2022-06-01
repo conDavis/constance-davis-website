@@ -18,6 +18,19 @@ export const SkillsContainer = styled.div`
 
 export const MentorshipContainer = styled.div`
   padding: 0 7.6em 0 5em;
+  @media (max-width: 768px) {
+    padding: 0 1.2em 0 1.2em;
+    align-items: center;
+  }
+`;
+
+export const MentorshipLogo = styled.img`
+  width: 200px;
+  float: left;
+  padding-right: 24px;
+  @media (max-width: 768px) {
+    float: inherit;
+  }
 `;
 
 export const ProjectCard = styled.div`
@@ -27,4 +40,14 @@ export const ProjectCard = styled.div`
   padding: 16px 16px 4px 16px;
   margin: 8px 16px 4px 16px;
   color: black;
+  @media (max-width: 768px) {
+    width: 85%;
+  }
+`;
+
+export const ProjectContainer = styled.div`
+  display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;

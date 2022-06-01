@@ -36,7 +36,7 @@ export const NavName = styled.p`
   padding-right: 45%;
   padding-left: 8px;
   @media (max-width: 768px) {
-    padding-right: 20%;
+    padding-right: 75px;
     padding-top: 10px;
   }
 `;
@@ -62,6 +62,7 @@ export const Bars = styled(FaBars)`
     font-size: 1.8rem;
     cursor: pointer;
     padding-top: 8px;
+    margin-left: 8px; 
   }
 `;
 
@@ -114,4 +115,14 @@ export const NavIcon = styled.img`
     transition: all 0.2s ease-in-out;
     filter: none;
   }
+`;
+
+export const NavDropdown = styled.ul`
+  background: #f1f6f6;
+  font-size: 18px;
+  margin-top: 20%;
+  margin-left: -50%;
+  height: 100%;
+  padding: 5% 3% 10% 0;
+  list-style-type: none;
 `;

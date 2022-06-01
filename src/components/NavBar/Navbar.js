@@ -6,12 +6,14 @@ import {
   NavLogo,
   NavMenu,
   NavName,
+  NavDropdown,
 } from "./NavBarElements";
 import { NavLink as Link } from "react-router-dom";
 
 import logo from "../../assets/conlong3.png";
 const Navbar = () => {
   const [isDropdownVisible, setIsDropdownVisible] = new useState(false);
+  const onDropDownClick = () => {if(isDropdownVisible){setIsDropdownVisible(false)}};
   return (
     <>
       <Nav>
@@ -22,49 +24,6 @@ const Navbar = () => {
         <NavName>Constance Davis</NavName>
 
         <Bars onClick={() => setIsDropdownVisible(!isDropdownVisible)}/>
-        {isDropdownVisible &&
-        <ul className="dropdown">
-          <li>
-            <NavLink
-              to="/"
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              About Me
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/software"
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              Software
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/art"
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              Art
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/resume"
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              Resume
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/contact"
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              Contact
-            </NavLink>
-          </li>
-        </ul>}
 
         <NavMenu>
           <NavLink
@@ -102,7 +61,51 @@ const Navbar = () => {
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
+        {isDropdownVisible &&
+        <NavDropdown className="dropdown">
+          <li onClick={onDropDownClick}>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              About Me
+            </NavLink>
+          </li>
+          <li onClick={onDropDownClick}>
+            <NavLink
+              to="/software"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Software
+            </NavLink>
+          </li>
+          <li onClick={onDropDownClick}>
+            <NavLink
+              to="/art"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Art
+            </NavLink>
+          </li>
+          <li onClick={onDropDownClick}>
+            <NavLink
+              to="/resume"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Resume
+            </NavLink>
+          </li>
+          <li onClick={onDropDownClick}>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Contact
+            </NavLink>
+          </li>
+        </NavDropdown>}
       </Nav>
+
     </>
   );
 };
