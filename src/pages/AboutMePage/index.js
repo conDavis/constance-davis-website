@@ -5,6 +5,7 @@ import {
   AboutMeContent,
   SideBarImg,
   AboutMeHeading,
+  CenterImg,
 } from "./AboutMeElements";
 import selfPortrait from "../../assets/SelfPotrait.jpg";
 
@@ -16,6 +17,7 @@ const Index = () => {
         <p style={{ fontSize: "17px" }}>Self Portrait 2020</p>
       </AboutMeSideBar>
       <AboutMeContent>
+        <CenterImg src={selfPortrait} />
         <AboutMeHeading>What I do</AboutMeHeading>
         <p>
           I'm a software developer pursuing a B.S. in Computer Science at

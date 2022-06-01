@@ -124,7 +124,7 @@ const Software = () => {
             </p>
           </ProjectCard>
         </ProjectContainer>
-        <div style={{ display: "flex" }}>
+        <ProjectContainer>
           <ProjectCard style={{ flex: 1 }}>
             <h2>
               <b>Presidential Speech Issue Tracking</b>
@@ -132,8 +132,8 @@ const Software = () => {
             <p>
               Predictive analysis model based on presidential speeches, built in
               Python using K-nearest neighbor algorithm for classification.
-              Yielding 70%+ accuracy on the prediction of time period, political
-              party and presidential-speaker based on the text from the speech
+              Yielding 70%+ accuracy on the prediction of time period, and political
+              party based on the text from the speech
               alone.
               <br />
               <br />
@@ -159,7 +159,7 @@ const Software = () => {
               <a href="https://github.com/conDavis/constance-davis-website" target="_blank">Check out the repo.</a>
             </p>
           </ProjectCard>
-        </div>
+        </ProjectContainer>
       </div>
     );
   };

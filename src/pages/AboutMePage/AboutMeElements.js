@@ -7,7 +7,7 @@ export const AboutMeContainer = styled.div`
   height: 100%;
   @media (max-width: 768px) {
     padding-top: 24px;
-    padding-bottom: 24px;
+    margin-bottom: 5%;
     overflow-y: auto;
   }
 `;
@@ -35,6 +35,17 @@ export const SideBarImg = styled.img`
   margin-right: auto;
   width: 80%;
   padding-top: 15%;
+`;
+
+export const CenterImg = styled.img`
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding-top: 8%;
+  }
 `;
 
 export const AboutMeHeading = styled.h1`

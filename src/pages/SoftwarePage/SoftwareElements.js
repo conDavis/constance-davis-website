@@ -38,7 +38,7 @@ export const ProjectCard = styled.div`
   height: 100%;
   background-color: #eaf4ce;
   padding: 16px 16px 4px 16px;
-  margin: 8px 16px 4px 16px;
+  margin: 2%;
   color: black;
   @media (max-width: 768px) {
     width: 85%;
@@ -51,3 +51,4 @@ export const ProjectContainer = styled.div`
     flex-direction: column;
   }
 `;
+
