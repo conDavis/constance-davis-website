@@ -29,7 +29,7 @@ export const RandomPiece = styled.img`
   max-height: calc(${window.screen.availHeight}px * 0.6);
 `;
 
-export const GalleryPiece = styled.img`
+export const Piece = styled.img`
   max-width: calc(${window.screen.availWidth}px * 0.7);
   max-height: calc(${window.screen.availHeight}px * 0.7);
 `;

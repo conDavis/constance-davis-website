@@ -6,7 +6,7 @@ import {
   RandomPiece,
   PieceContainer,
   ArtButton,
-  GalleryPiece,
+  Piece,
 } from "./ArtElements";
 import ConLoader from "../../components/Loader";
 
@@ -99,20 +99,6 @@ const Art = () => {
     fetchAllArt().then(() => setIsGalleryLoaded(true));
   }, [isFetchingData]);
 
-  const Piece = (name, source) => {
-    return (
-      <div>
-        <RandomPiece
-          src={source}
-          alt={`Random Art at ${source}`}
-          style={isImageLoaded ? {} : { display: "none" }}
-          key={name}
-        />
-        <h2>${name}</h2>
-      </div>
-    );
-  };
-
   return (
     <ArtContainer>
       <ArtContent>
@@ -145,7 +131,7 @@ const Art = () => {
                   }}
                   key={galleryPiece.name}
                 >
-                  <GalleryPiece
+                  <Piece
                     src={galleryPiece.url}
                     alt={`Art at ${galleryPiece.url}`}
                     key={name}
