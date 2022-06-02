@@ -13,6 +13,9 @@ export const Nav = styled.nav`
   z-index: 12;
   /* Third Nav */
   /* justify-content: flex-start; */
+  @media (max-width: 768px) {
+    padding: 0.1rem calc((75vw - 1000px) / 2);
+  }
 `;
 
 export const NavLink = styled(Link)`
@@ -123,6 +126,6 @@ export const NavDropdown = styled.ul`
   margin-top: 20%;
   margin-left: -50%;
   height: 100%;
-  padding: 5% 3% 10% 0;
+  padding: 5% 3% 5% 0;
   list-style-type: none;
 `;

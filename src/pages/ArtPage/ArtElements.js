@@ -25,7 +25,7 @@ export const PieceContainer = styled.div`
 `;
 
 export const RandomPiece = styled.img`
-  max-width: calc(${window.screen.availWidth}px / 2);
+  max-width: calc(${window.screen.availWidth}px * 0.66);
   max-height: calc(${window.screen.availHeight}px * 0.6);
 `;
 

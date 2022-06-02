@@ -96,7 +96,7 @@ const Art = () => {
   }, []);
 
   useEffect(() => {
-    fetchAllArt().then(() => setIsGalleryLoaded(true));
+    fetchAllArt().catch(console.error).then(() => setIsGalleryLoaded(true));
   }, [isFetchingData]);
 
   return (

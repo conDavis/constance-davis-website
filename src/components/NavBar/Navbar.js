@@ -89,14 +89,6 @@ const Navbar = () => {
           </li>
           <li onClick={onDropDownClick}>
             <NavLink
-              to="/resume"
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              Resume
-            </NavLink>
-          </li>
-          <li onClick={onDropDownClick}>
-            <NavLink
               to="/contact"
               className={({ isActive }) => (isActive ? "active" : "")}
             >

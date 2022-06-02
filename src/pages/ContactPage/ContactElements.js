@@ -24,7 +24,7 @@ export const ContactCard = styled.div`
     width: 100%;
     height: 60%;
     margin-top: 30%;
-    padding: 10% 4px 0 8px;
+    padding: 5% 4px 0 8px;
   }
 `;
 
@@ -56,7 +56,7 @@ export const ContactList = styled.ul`
   font-size: 25px;
   @media (max-width: 768px) {
     text-align: center;
-    font-size: 24px;
+    font-size: 22px;
   }
 `;
 
