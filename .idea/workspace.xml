@@ -4,7 +4,6 @@
     <list default="true" id="df3d496f-9574-4dd4-bf08-d9180c2db016" name="Default Changelist" comment="fixing resume iframe dimensions">
       <change afterPath="$PROJECT_DIR$/src/assets/current_resume2022.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PyramidSolitaire" beforeDir="false" afterPath="$PROJECT_DIR$/../PyramidSolitaire" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +140,7 @@
       <workItem from="1654114991354" duration="2613000" />
       <workItem from="1654178206393" duration="326000" />
       <workItem from="1654178548746" duration="927000" />
-      <workItem from="1654180858123" duration="348000" />
+      <workItem from="1654180858123" duration="1608000" />
     </task>
     <task id="LOCAL-00001" summary="adding navBar">
       <created>1640053706286</created>
@@ -451,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654177092927</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="updating deploy script">
+      <created>1654181247177</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1654181247177</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +477,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="replacing imgs with icons, and styling them" />
     <MESSAGE value="adding responsive styling" />
     <MESSAGE value="formatting" />
     <MESSAGE value="Finalizing" />
@@ -496,7 +501,8 @@
     <MESSAGE value="responsive styling" />
     <MESSAGE value="Removing unused const and name refactor for Piece element." />
     <MESSAGE value="Fixing async calls in useEffect." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing async calls in useEffect." />
+    <MESSAGE value="updating deploy script" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating deploy script" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
