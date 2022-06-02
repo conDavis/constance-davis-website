@@ -86,13 +86,13 @@ const Art = () => {
       .catch((error) => console.log(error.message));
   };
 
-  useEffect(() => {
+  useEffect( () => {
     setIsFetchingData(true);
     const fetchArt = async () => {
-    fetchRandoArt().then(() => {
+    await fetchRandoArt();};
+    fetchArt().catch(console.error).then(() => {
       setIsFetchingData(false);
-    });};
-    fetchArt();
+    });
   }, []);
 
   useEffect(() => {
