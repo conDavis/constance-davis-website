@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/constance-davis-website/static/css/main.3e1397fd.css",
+    "main.js": "/constance-davis-website/static/js/main.277db37c.js",
+    "static/js/787.bf234bdf.chunk.js": "/constance-davis-website/static/js/787.bf234bdf.chunk.js",
+    "static/media/maxConCollab.jpg": "/constance-davis-website/static/media/maxConCollab.922db2b537c37effee04.jpg",
+    "static/media/SelfPotrait.jpg": "/constance-davis-website/static/media/SelfPotrait.c0ebda4d4200ad513b28.jpg",
+    "static/media/current_resume2022.pdf": "/constance-davis-website/static/media/current_resume2022.95183d2f2b007f4be4d3.pdf",
+    "static/media/Con2.png": "/constance-davis-website/static/media/Con2.adb2fbd34e8b06784f0f.png",
+    "static/media/conlong3.png": "/constance-davis-website/static/media/conlong3.0a74706a5fb22ad547a9.png",
+    "static/media/visionVoice.png": "/constance-davis-website/static/media/visionVoice.022a8a01dd5d4f0306d7.png",
+    "index.html": "/constance-davis-website/index.html",
+    "main.3e1397fd.css.map": "/constance-davis-website/static/css/main.3e1397fd.css.map",
+    "main.277db37c.js.map": "/constance-davis-website/static/js/main.277db37c.js.map",
+    "787.bf234bdf.chunk.js.map": "/constance-davis-website/static/js/787.bf234bdf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e1397fd.css",
+    "static/js/main.277db37c.js"
+  ]
+}
