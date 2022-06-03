@@ -11,6 +11,9 @@ export const ContactContainer = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (max-height: 500px){
+    background-image: none;
+  }
 `;
 
 export const ContactCard = styled.div`
@@ -36,14 +39,13 @@ export const ContactCard = styled.div`
 
 export const ContactHeaderContainer = styled.div`
   display: inline-block;
-  @media (max-height: 500px) {
-    padding-right: 3%;
-  }
+  
 `;
 
 export const ContactHeader = styled.h1`
   float: right;
   margin-left: -12px;
+  
 `;
 
 export const ContactLogo = styled.img`
