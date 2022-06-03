@@ -24,7 +24,7 @@ export const ContactCard = styled.div`
     width: 100%;
     height: 60%;
     margin-top: 30%;
-    padding: 5% 5% 12% 5%;
+    padding: 5% 5% 14% 5%;
   }
 `;
 
