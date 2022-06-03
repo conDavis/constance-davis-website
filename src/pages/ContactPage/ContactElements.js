@@ -29,7 +29,7 @@ export const ContactCard = styled.div`
   
   @media (max-height: 500px) {
     width: 100%;
-    height: 65%;
+    height: 100%;
     padding: 5% 5% 15% 5%;
   }
 `;
@@ -37,7 +37,7 @@ export const ContactCard = styled.div`
 export const ContactHeaderContainer = styled.div`
   display: inline-block;
   @media (max-height: 500px) {
-    padding-right: 5%;
+    padding-right: 3%;
   }
 `;
 
