@@ -7,7 +7,7 @@ export const AboutMeContainer = styled.div`
   height: 100%;
   @media (max-width: 768px) {
     padding-top: 24px;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     overflow-y: auto;
   }
 `;
