@@ -126,7 +126,6 @@ const Contact = () => {
           <Github />
           <LinkedIn />
         </ContactList>
-
         <p>I'd love to talk</p>
       </ContactCard>
     </ContactContainer>
