@@ -22,7 +22,7 @@ export const ContactCard = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    height: 60%;
+    height: 65%;
     margin-top: 30%;
     padding: 5% 5% 15% 5%;
   }
