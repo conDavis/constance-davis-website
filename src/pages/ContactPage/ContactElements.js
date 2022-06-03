@@ -26,10 +26,19 @@ export const ContactCard = styled.div`
     margin-top: 30%;
     padding: 5% 5% 15% 5%;
   }
+  
+  @media (max-height: 500px) {
+    width: 100%;
+    height: 65%;
+    padding: 5% 5% 15% 5%;
+  }
 `;
 
 export const ContactHeaderContainer = styled.div`
   display: inline-block;
+  @media (max-height: 500px) {
+    padding-right: 5%;
+  }
 `;
 
 export const ContactHeader = styled.h1`

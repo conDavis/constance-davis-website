@@ -15,6 +15,11 @@ export const Nav = styled.nav`
   /* justify-content: flex-start; */
   @media (max-width: 768px) {
     padding: 0.1rem calc((75vw - 1000px) / 2);
+    
+  }
+  @media (max-height: 500px) {
+    width: 102%;
+    padding: 0.1rem calc((75vw - 1000px) / 2);
   }
 `;
 
@@ -45,6 +50,11 @@ export const NavName = styled.p`
     padding-right: 75px;
     padding-top: 10px;
   }
+  @media (max-height: 500px) {
+    font-size: 3vw;
+    padding-right: 3%;
+    padding-top: 10px;
+  }
 `;
 
 export const NavLogo = styled.img`
@@ -52,6 +62,9 @@ export const NavLogo = styled.img`
   padding-top: 12px;
   overflow: visible;
   @media (max-width: 768px) {
+    padding-left: 20%;
+  }
+  @media (max-height: 500px) {
     padding-left: 20%;
   }
 `;
@@ -86,33 +99,15 @@ white-space: nowrap; */
   }
 `;
 
-export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
-  margin-right: 24px;
-  /* Third Nav */
-  /* justify-content: flex-end;
-width: 100vw; */
-  @media screen and (max-width: 768px) {
+
+export const ResumeLink = styled(NavLink)`
+  @media screen and (max-height: 500px){
     display: none;
-    padding-top: 10px;
 
   }
+  
 `;
 
-export const NavBtnLink = styled(Link)`
-  border-radius: 4px;
-  background: #808080;
-  padding: 10px 22px;
-  color: #000000;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-  /* Second Nav */
-  margin-left: 24px;
-`;
 
 export const NavIcon = styled.img`
   width: 32px;

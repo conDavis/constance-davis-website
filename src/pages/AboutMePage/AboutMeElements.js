@@ -61,7 +61,12 @@ export const AboutMeHeading = styled.h1`
     margin-left: 10px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 768px){
+    &:after {
+      display: none;
+    }
+  }
+  @media (max-height: 500px){
     &:after {
       display: none;
     }

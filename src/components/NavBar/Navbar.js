@@ -7,6 +7,7 @@ import {
   NavMenu,
   NavName,
   NavDropdown,
+  ResumeLink,
 } from "./NavBarElements";
 import { NavLink as Link } from "react-router-dom";
 
@@ -44,12 +45,12 @@ const Navbar = () => {
           >
             Art
           </NavLink>
-          <NavLink
+          <ResumeLink
             to="/resume"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Resume
-          </NavLink>
+          </ResumeLink>
           <NavLink
             to="/contact"
             className={({ isActive }) => (isActive ? "active" : "")}
