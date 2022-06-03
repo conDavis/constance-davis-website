@@ -10,9 +10,6 @@ export const AboutMeContainer = styled.div`
     margin-bottom: 10%;
     overflow-y: auto;
   }
-  @media (max-height: 500px) {
-    margin-bottom: 15%;
-  }
 `;
 
 export const AboutMeSideBar = styled.div`
