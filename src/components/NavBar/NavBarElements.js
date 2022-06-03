@@ -34,11 +34,14 @@ export const NavLink = styled(Link)`
 
 export const NavName = styled.p`
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.7vw;
   color: #414e1c;
   padding-right: 45%;
   padding-left: 8px;
   @media (max-width: 768px) {
+    position: absolute;
+    padding-left: 30%;
+    font-size: 6vw;
     padding-right: 75px;
     padding-top: 10px;
   }
