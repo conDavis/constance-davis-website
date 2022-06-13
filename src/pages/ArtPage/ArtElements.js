@@ -27,11 +27,15 @@ export const PieceContainer = styled.div`
 export const RandomPiece = styled.img`
   max-width: calc(${window.screen.availWidth}px * 0.66);
   max-height: calc(${window.screen.availHeight}px * 0.6);
+  border: transparent 6px solid;
+  &:hover {
+    transition: all 0.15s ease-in-out;
+    border: #f2b8dd 6px groove ;
+  }
 `;
 
 export const Piece = styled.img`
-  max-width: calc(${window.screen.availWidth}px * 0.7);
-  max-height: calc(${window.screen.availHeight}px * 0.7);
+  max-width: calc(${window.screen.availWidth}px * 0.3);
 `;
 
 export const ArtButton = styled.button`

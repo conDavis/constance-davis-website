@@ -53,12 +53,15 @@ const Art = () => {
   const RandoArtScreen = () => {
     return (
       <>
+
+        <Link to={`/art#${randomArtName}`}>
         <RandomPiece
           src={randomArt}
           alt={`Random Art at ${randomArt}`}
           style={isImageLoaded ? {} : { display: "none" }}
           onLoad={() => setIsImageLoaded(true)}
         />
+        </Link>
         <br />
         {isImageLoaded && <ArtButtons />}
       </>
@@ -99,6 +102,8 @@ const Art = () => {
     fetchAllArt().catch(console.error).then(() => setIsGalleryLoaded(true));
   }, [isFetchingData]);
 
+
+
   return (
     <ArtContainer>
       <ArtContent>
@@ -123,6 +128,8 @@ const Art = () => {
               <h1>All Works</h1>
             {isGalleryLoaded &&
               allArt.map((galleryPiece) => (
+                <>
+                <a id={`${galleryPiece.name}`}/>
                 <div
                   style={{
                     padding: "24px 4px 4px 16px",
@@ -138,6 +145,7 @@ const Art = () => {
                   />
                   {ArtTitle(galleryPiece.name)}
                 </div>
+                </>
               ))}
             <Link to="/art#top">
               <p>Back To Top</p>
