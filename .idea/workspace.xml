@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3f39a3a5-5018-46d5-bd53-961fa023ad62" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ArtPage/ArtElements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ArtPage/ArtElements.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2A1x6Pep9v0lBetHw1wnd98yUa8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\davis\WebstormProjects\constance-davis-website\node_modules\prettier" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f39a3a5-5018-46d5-bd53-961fa023ad62" name="Default Changelist" comment="" />
+      <created>1654190722694</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654190722694</updated>
+      <workItem from="1654190727821" duration="16829000" />
+      <workItem from="1655142942156" duration="7481000" />
+    </task>
+    <task id="LOCAL-00001" summary="tweaking responsive margins/padding">
+      <created>1654206618907</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654206618907</updated>
+    </task>
+    <task id="LOCAL-00002" summary="updating package-lock">
+      <created>1654206633967</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654206633967</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updating constance-davis-website.iml">
+      <created>1654206652469</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654206652469</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixing NavName position bug for responsive design">
+      <created>1654216986153</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654216986153</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixing contact card padding">
+      <created>1654217424066</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654217424066</updated>
+    </task>
+    <task id="LOCAL-00006" summary="contact page styling">
+      <created>1654260767343</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654260767343</updated>
+    </task>
+    <task id="LOCAL-00007" summary="contact page padding tweak">
+      <created>1654261189878</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654261189878</updated>
+    </task>
+    <task id="LOCAL-00008" summary="contact page padding tweak 2.0">
+      <created>1654262190315</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654262190315</updated>
+    </task>
+    <task id="LOCAL-00009" summary="contact page padding tweak 3.0">
+      <created>1654262608091</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1654262608091</updated>
+    </task>
+    <task id="LOCAL-00010" summary="about me page margin tweak">
+      <created>1654262755166</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1654262755166</updated>
+    </task>
+    <task id="LOCAL-00011" summary="contact card height change">
+      <created>1654263158156</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1654263158156</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Responsive design for flipping phone">
+      <created>1654267693210</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1654267693210</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Responsive design for flipping phone tweak">
+      <created>1654267962735</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1654267962735</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Responsive design for flipping phone tweak 2.0">
+      <created>1654268355655</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1654268355655</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Responsive design for flipping phone tweak 3.0">
+      <created>1654269001116</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1654269001116</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Responsive design for flipping phone tweak 4.0">
+      <created>1654269054666</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1654269054666</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Responsive design for flipping phone tweak 4.0">
+      <created>1654269176834</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1654269176834</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Adding random piece hash links">
+      <created>1655151757523</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1655151757523</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Updating website description">
+      <created>1655152356594</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1655152356594</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding catch for errors" />
+    <MESSAGE value="tweaking responsive margins/padding" />
+    <MESSAGE value="updating package-lock" />
+    <MESSAGE value="updating constance-davis-website.iml" />
+    <MESSAGE value="fixing NavName position bug for responsive design" />
+    <MESSAGE value="fixing contact card padding" />
+    <MESSAGE value="contact page styling" />
+    <MESSAGE value="contact page padding tweak" />
+    <MESSAGE value="contact page padding tweak 2.0" />
+    <MESSAGE value="contact page padding tweak 3.0" />
+    <MESSAGE value="about me page margin tweak" />
+    <MESSAGE value="contact card height change" />
+    <MESSAGE value="Responsive design for flipping phone" />
+    <MESSAGE value="Responsive design for flipping phone tweak" />
+    <MESSAGE value="Responsive design for flipping phone tweak 2.0" />
+    <MESSAGE value="Responsive design for flipping phone tweak 3.0" />
+    <MESSAGE value="Responsive design for flipping phone tweak 4.0" />
+    <MESSAGE value="Adding random piece hash links" />
+    <MESSAGE value="Updating website description" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating website description" />
+  </component>
+</project>

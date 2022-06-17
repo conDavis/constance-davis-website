@@ -36,6 +36,9 @@ export const RandomPiece = styled.img`
 
 export const Piece = styled.img`
   max-width: calc(${window.screen.availWidth}px * 0.3);
+  @media (max-width: 768px) {
+    max-width: calc(${window.screen.availWidth}px * 0.8);
+  }
 `;
 
 export const ArtButton = styled.button`
