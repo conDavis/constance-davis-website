@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420" role="img" aria-label="A painted portrait of a person in a mint sweater, holding a daisy">
+  <rect width="400" height="420" fill="#8fb8c4"/>
+  <circle cx="80" cy="70" r="28" fill="#f4e6c4" opacity="0.45"/>
+  <circle cx="340" cy="90" r="18" fill="#efc96a" opacity="0.55"/>
+  <path d="M0 310c80-40 140-20 200 8s130 20 200-18v120H0z" fill="#6eae9a"/>
+  <ellipse cx="200" cy="168" rx="78" ry="92" fill="#e8c7a8"/>
+  <path d="M130 150c10-70 130-70 142-8-30-28-108-24-142 8z" fill="#3a2a22"/>
+  <circle cx="172" cy="172" r="7" fill="#3a2a22"/>
+  <circle cx="228" cy="170" r="7" fill="#3a2a22"/>
+  <path d="M186 206c12 10 28 10 40-2" fill="none" stroke="#c43c3a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M120 268c20 70 140 78 168 8 8 70-24 130-86 138-62-4-96-68-82-146z" fill="#dceee4"/>
+  <circle cx="292" cy="250" r="16" fill="#faf1dc"/>
+  <circle cx="292" cy="250" r="5" fill="#efc96a"/>
+  <path d="M292 266c2 22-10 36-22 44" stroke="#6eae9a" stroke-width="4" fill="none"/>
+  <g fill="none" stroke="#faf1dc" stroke-width="3">
+    <circle cx="276" cy="238" r="9"/>
+    <circle cx="308" cy="238" r="9"/>
+    <circle cx="270" cy="258" r="9"/>
+    <circle cx="314" cy="258" r="9"/>
+    <circle cx="292" cy="268" r="9"/>
+  </g>
+</svg>

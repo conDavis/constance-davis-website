@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 110">
+  <rect width="88" height="110" fill="#3d5c56"/>
+  <rect x="6" y="6" width="76" height="98" fill="#f6efe2"/>
+  <path d="M16 28h56l-28 22z" fill="#e24b43"/>
+  <rect x="16" y="28" width="56" height="36" fill="none" stroke="#2a1f28" stroke-width="3"/>
+  <path d="M16 28l28 20 28-20" fill="none" stroke="#2a1f28" stroke-width="3"/>
+  <text x="44" y="86" text-anchor="middle" font-size="10" font-family="Courier New, monospace" fill="#2a1f28">MAIL</text>
+</svg>

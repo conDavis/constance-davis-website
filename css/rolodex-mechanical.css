@@ -1,0 +1,371 @@
+/* Mechanical rolodex — physical object model, no site theme */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  background: #ddd;
+  color: #222;
+}
+
+.demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 32px 16px 48px;
+}
+
+/* ---- whole object ---- */
+.rolodex {
+  position: relative;
+  width: 440px;
+  height: 420px;
+  perspective: 820px;
+  perspective-origin: 50% 38%;
+}
+
+.rolodex-frame {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+/* ---- base ---- */
+.rolodex-base {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 360px;
+  height: 72px;
+  margin-left: -180px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.base-top {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  top: 0;
+  height: 14px;
+  background: linear-gradient(180deg, #555, #333);
+  border: 2px solid #111;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.base-front {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 12px;
+  bottom: 0;
+  background: linear-gradient(180deg, #3a3a3a 0%, #1a1a1a 55%, #0d0d0d 100%);
+  border: 2px solid #000;
+  border-radius: 0 0 8px 8px;
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.35),
+    inset 0 2px 0 rgba(255, 255, 255, 0.06);
+}
+
+/* ---- vertical supports ---- */
+.support {
+  position: absolute;
+  bottom: 58px;
+  width: 18px;
+  height: 200px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.support::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #111, #444 42%, #222 78%, #111);
+  border-radius: 6px 6px 2px 2px;
+  box-shadow:
+    inset 1px 0 0 rgba(255, 255, 255, 0.1),
+    2px 0 6px rgba(0, 0, 0, 0.25);
+}
+
+.support-left {
+  left: 52px;
+  transform: rotate(-2deg);
+  transform-origin: bottom center;
+}
+
+.support-right {
+  right: 52px;
+  transform: rotate(2deg);
+  transform-origin: bottom center;
+}
+
+.support-foot {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 52px;
+  height: 14px;
+  margin-left: -26px;
+  background: linear-gradient(180deg, #333, #111);
+  border: 2px solid #000;
+  border-top: none;
+  border-radius: 0 0 26px 26px / 0 0 100% 100%;
+}
+
+.support-cap {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  width: 24px;
+  height: 10px;
+  margin-left: -12px;
+  background: linear-gradient(180deg, #666, #222);
+  border: 2px solid #000;
+  border-radius: 4px 4px 0 0;
+}
+
+/* ---- horizontal axle through supports ---- */
+.axle {
+  position: absolute;
+  left: 58px;
+  right: 58px;
+  top: 118px;
+  height: 12px;
+  z-index: 30;
+  pointer-events: none;
+  transform: translateZ(24px);
+}
+
+.axle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    #f8f8f8 0%,
+    #c8c8c8 35%,
+    #888 55%,
+    #bbb 100%
+  );
+  border-radius: 6px;
+  box-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.axle-ring {
+  position: absolute;
+  top: -4px;
+  width: 14px;
+  height: 20px;
+  border: 3px solid #111;
+  border-radius: 2px;
+  background: transparent;
+}
+
+.axle-ring:first-child {
+  left: 38%;
+}
+
+.axle-ring:last-child {
+  right: 38%;
+}
+
+/* ---- card wheel (hinged at axle) ---- */
+.card-wheel {
+  position: absolute;
+  left: 50%;
+  top: 118px;
+  width: 360px;
+  height: 280px;
+  margin-left: -180px;
+  transform-style: preserve-3d;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* ---- individual cards hang from axle ---- */
+.rolodex-card {
+  --angle: 0deg;
+  --tx: 0px;
+  --tz: 0px;
+  --scale: 1;
+  --opacity: 1;
+
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 280px;
+  height: 196px;
+  margin-left: -140px;
+  transform-origin: 50% 0;
+  transform: translateX(var(--tx)) translateZ(var(--tz)) rotateX(var(--angle))
+    scale(var(--scale));
+  opacity: var(--opacity);
+
+  background: #f4ead2;
+  border: 1px solid #b8a98b;
+  border-radius: 6px 6px 4px 4px;
+  box-shadow:
+    2px 4px 0 rgba(0, 0, 0, 0.1),
+    4px 10px 18px rgba(0, 0, 0, 0.14);
+
+  will-change: transform, opacity;
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1.05, 0.36, 1),
+    opacity 0.3s ease;
+  backface-visibility: hidden;
+}
+
+.rolodex-card.is-hidden {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+.rolodex-card.is-settling {
+  transition:
+    transform 0.55s cubic-bezier(0.34, 1.48, 0.64, 1),
+    opacity 0.3s ease;
+}
+
+.rolodex-card.is-active {
+  z-index: 20;
+  pointer-events: auto;
+}
+
+/* card colors (prototype) */
+.rolodex-card[data-index="0"] {
+  background: #f4c6c6;
+}
+
+.rolodex-card[data-index="1"] {
+  background: #c6d8f4;
+}
+
+.rolodex-card[data-index="2"] {
+  background: #c6f4d0;
+}
+
+.rolodex-card[data-index="3"] {
+  background: #f4e8c6;
+}
+
+.rolodex-card[data-index="4"] {
+  background: #dcc6f4;
+}
+
+/* index tab above hinge line */
+.card-tab {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  width: 44px;
+  height: 22px;
+  margin-left: -22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #333;
+  background: linear-gradient(180deg, #fff 0%, #e8dcc4 100%);
+  border: 1px solid #a89878;
+  border-radius: 6px 6px 0 0;
+  clip-path: polygon(8% 0%, 92% 0%, 100% 100%, 0% 100%);
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.08);
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px 16px 16px;
+}
+
+.card-label {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #222;
+}
+
+/* ---- controls ---- */
+.rolodex-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.rolodex-controls button {
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 2px solid #333;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.rolodex-controls button:hover {
+  background: #f5f5f5;
+}
+
+.rolodex-controls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.rolodex-indicator {
+  font-size: 0.85rem;
+  color: #444;
+  min-width: 4rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rolodex-card {
+    transition: opacity 0.2s ease;
+  }
+
+  .rolodex-card.is-settling {
+    transition: opacity 0.2s ease;
+  }
+}
+
+@media (max-width: 480px) {
+  .rolodex {
+    width: min(440px, 100vw - 24px);
+    height: 380px;
+    perspective: 680px;
+  }
+
+  .rolodex-base {
+    width: min(360px, 92%);
+    margin-left: calc(min(360px, 92%) / -2);
+  }
+
+  .card-wheel {
+    width: min(360px, 92vw);
+    margin-left: calc(min(360px, 92vw) / -2);
+  }
+
+  .rolodex-card {
+    width: 240px;
+    height: 168px;
+    margin-left: -120px;
+  }
+}
