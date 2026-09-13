@@ -278,6 +278,26 @@ h1.site-title .title-mark:last-of-type {
   background: linear-gradient(90deg, #3a0a78, var(--grape));
 }
 
+.module.joy-edge {
+  border-color: color-mix(in srgb, var(--hot-pink) 62%, var(--cyan));
+  box-shadow: 6px 6px 0 color-mix(in srgb, var(--pop-red) 72%, var(--cyan)),
+    0 0 0 2px var(--deep-space) inset;
+}
+
+.module.joy-edge .module-title {
+  background: linear-gradient(90deg, var(--hotpink-dark), var(--cyan));
+}
+
+.module.reading-edge {
+  border-color: color-mix(in srgb, var(--hot-pink) 62%, var(--grape));
+  box-shadow: 6px 6px 0 color-mix(in srgb, var(--pop-red) 72%, var(--grape)),
+    0 0 0 2px var(--deep-space) inset;
+}
+
+.module.reading-edge .module-title {
+  background: linear-gradient(90deg, var(--pop-red), var(--grape));
+}
+
 .module-body {
   padding: 18px 20px 22px;
   line-height: 1.6;
