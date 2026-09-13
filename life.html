@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>✩ game of life ✩ Constance Davis</title>
+    <meta name="description" content="Conway's Game of Life — a small universe on Constance's site." />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&family=Syne+Mono:wght@400;700&family=Syne+Tactile&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/y2k.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to the game</a>
+    <div class="marquee-bar">
+      <span>✩ ﾟ･ conway's game of life · 1970 ･ﾟ✩ &nbsp; click to draw cells &nbsp; ✩ &nbsp; spacebar plays / pauses &nbsp; ✩ &nbsp; the grid wraps like a donut &nbsp; ✩</span>
+    </div>
+    <nav class="site-nav" data-y2k-nav aria-label="Site"></nav>
+
+    <header class="hero">
+      <h1 class="site-title">✧ game of life ✧</h1>
+      <p class="tagline">&gt; conways game of life &lt;</p>
+      <div class="stars-divider">
+        ★ ☆ ✦ ✧ ★ ☆ ✦
+        <a class="egg" href="letter.html" title="a quieter room">★</a>
+      </div>
+    </header>
+
+    <div class="page-wrap" id="main">
+      <div class="module cyan-edge">
+        <div class="module-title">👾 the grid</div>
+        <div class="module-body life-body">
+          <div class="life-hud" aria-live="polite">
+            <span data-life-gen>gen 00000</span>
+            <span aria-hidden="true">·</span>
+            <span data-life-pop>pop 0000</span>
+            <span aria-hidden="true">·</span>
+            <span data-life-state>paused</span>
+          </div>
+
+          <div class="life-stage">
+            <canvas class="life-canvas" data-life-canvas aria-label="Game of Life grid. Click or drag to draw cells."></canvas>
+          </div>
+
+          <div class="life-controls">
+            <button class="life-btn" type="button" data-life-toggle>play</button>
+            <button class="life-btn ghost" type="button" data-life-step>step</button>
+            <button class="life-btn ghost" type="button" data-life-clear>clear</button>
+            <label class="life-speed">
+              <span>speed</span>
+              <input type="range" min="1" max="30" value="10" data-life-speed />
+            </label>
+          </div>
+
+          <div class="life-patterns" role="group" aria-label="Starting patterns">
+            <button class="life-chip" type="button" data-life-pattern="glider">glider</button>
+            <button class="life-chip" type="button" data-life-pattern="ship">spaceship</button>
+            <button class="life-chip" type="button" data-life-pattern="pulsar">pulsar</button>
+            <button class="life-chip" type="button" data-life-pattern="penta">pentadecathlon</button>
+            <button class="life-chip" type="button" data-life-pattern="gun">gosper gun</button>
+            <button class="life-chip" type="button" data-life-pattern="acorn">acorn</button>
+            <button class="life-chip" type="button" data-life-pattern="rpent">r-pentomino</button>
+            <button class="life-chip" type="button" data-life-pattern="soup">soup</button>
+          </div>
+
+          <p class="life-hint">draw on the grid · space to play/pause · the edges wrap</p>
+        </div>
+      </div>
+
+      <div class="module">
+        <div class="module-title">📜 the rules of the game</div>
+        <div class="module-body">
+          <p>
+            john conway created this cellular automaton in 1970. every cell looks at its eight neighbors (the cells touching it, including diagonals). then the whole grid updates at once, following three rules:
+          </p>
+          <div class="blinkie-row life-rules">
+            <span class="blinkie"><span class="dot">●</span> survival: a live cell with 2 or 3 live neighbors stays alive</span>
+            <span class="blinkie pink"><span class="dot">●</span> birth: an empty cell with exactly 3 live neighbors becomes alive</span>
+            <span class="blinkie red"><span class="dot">●</span> death: a live cell with fewer than 2 or more than 3 neighbors dies</span>
+          </div>
+          <p>
+            cyan cells are newborns, pink ones have stuck around a bit, red and grape have been here a while.
+          </p>
+        </div>
+      </div>
+
+      <div class="module grape-edge">
+        <div class="module-title">❓ why?</div>
+        <div class="module-body">
+          <p>
+            one of the first times i really lost myself in a programming project was implementing conway's game of life in my high school computer science class. there was something so incredible about a handful of rules producing organic-looking patterns that could persist or burn out. i still think it's beautiful to watch.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="badge-row">
+        <span class="badge">0-player game</span>
+        <span class="badge">born 1970</span>
+      </div>
+      <p>made with <span class="sparkle-heart">💖</span> by Con</p>
+    </footer>
+    <script src="js/y2k.js"></script>
+    <script src="js/life.js"></script>
+  </body>
+</html>

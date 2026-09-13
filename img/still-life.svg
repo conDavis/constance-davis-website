@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420">
+  <defs>
+    <pattern id="wp" width="70" height="70" patternUnits="userSpaceOnUse">
+      <rect width="70" height="70" fill="#e07a6a"/>
+      <circle cx="18" cy="22" r="7" fill="#c43c3a"/>
+      <circle cx="52" cy="48" r="6" fill="#f0c35a" opacity="0.7"/>
+      <path d="M18 30c6 8 2 16-4 20" fill="none" stroke="#2f6f66" stroke-width="2"/>
+    </pattern>
+    <filter id="wobble">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.18 0"/>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+  </defs>
+  <rect width="900" height="420" fill="url(#wp)"/>
+  <circle cx="790" cy="70" r="70" fill="#f0c35a"/>
+  <circle cx="786" cy="66" r="70" fill="none" stroke="#2f6f66" stroke-width="3" opacity="0.45"/>
+  <path d="M0 250c80-20 200-8 320 10 140 20 260-30 420-8 80 12 160 8 160 8v160H0z" fill="#245851" filter="url(#wobble)"/>
+  <path d="M40 240c120-30 280-20 430 12 120 26 250-20 390 4v70c-140 8-280 40-430 18C280 322 140 340 40 310z" fill="#efe6cf" opacity="0.92"/>
+  <g filter="url(#wobble)">
+    <path d="M210 268c20 8 18 40-8 52-30 4-48-18-40-40 8-14 28-18 48-12z" fill="#e24b43"/>
+    <path d="M248 258c16 6 22 28 4 44-22 8-40-10-36-28 4-12 18-20 32-16z" fill="#c43c3a"/>
+    <path d="M232 230c6 18 2 30-8 42" fill="none" stroke="#1e4f4a" stroke-width="4"/>
+    <path d="M310 210c38 8 70 48 62 92-10 48-62 70-102 52-44-16-64-70-48-110 14-36 52-46 88-34z" fill="#c8cc5a"/>
+    <path d="M352 198c4 16-2 30-12 42" fill="none" stroke="#2a1f28" stroke-width="4"/>
+    <path d="M430 168c70 10 118 70 102 128-12 48-86 78-140 52-58-20-84-92-52-138 24-36 58-50 90-42z" fill="#f4eee0"/>
+    <path d="M560 210c28 6 48-8 58-28 8 40-10 78-48 90" fill="none" stroke="#f4eee0" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="470" cy="248" r="9" fill="#e24b43"/>
+    <circle cx="510" cy="268" r="8" fill="#e24b43"/>
+    <circle cx="448" cy="278" r="8" fill="#e24b43"/>
+    <rect x="620" y="188" width="150" height="96" rx="8" fill="#1e4f4a"/>
+    <rect x="634" y="202" width="88" height="68" fill="#c9a24a"/>
+    <circle cx="748" cy="228" r="16" fill="#f0c35a"/>
+    <circle cx="748" cy="258" r="11" fill="#efe6cf"/>
+    <path d="M700 292l40 28 40-28v12l-40 28-40-28z" fill="#e24b43"/>
+    <ellipse cx="820" cy="300" rx="48" ry="28" fill="#2a1f28"/>
+    <circle cx="786" cy="278" r="22" fill="#2a1f28"/>
+    <path d="M772 266l6-22 12 16M798 264l8-22 12 18" fill="#2a1f28"/>
+    <circle cx="780" cy="276" r="3" fill="#f0c35a"/>
+    <circle cx="794" cy="276" r="3" fill="#f0c35a"/>
+  </g>
+  <rect width="900" height="420" fill="#6b3a20" opacity="0.08" filter="url(#grain)"/>
+</svg>

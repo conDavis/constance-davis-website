@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rolodex prototype</title>
+    <link rel="stylesheet" href="css/rolodex-mechanical.css" />
+  </head>
+  <body>
+    <main class="demo">
+      <div class="rolodex" id="rolodex">
+        <div class="rolodex-base" aria-hidden="true">
+          <div class="base-top"></div>
+          <div class="base-front"></div>
+        </div>
+
+        <div class="rolodex-frame">
+          <div class="support support-left" aria-hidden="true">
+            <div class="support-foot"></div>
+            <div class="support-cap"></div>
+          </div>
+
+          <div class="support support-right" aria-hidden="true">
+            <div class="support-foot"></div>
+            <div class="support-cap"></div>
+          </div>
+
+          <div class="axle" aria-hidden="true">
+            <div class="axle-ring"></div>
+            <div class="axle-ring"></div>
+          </div>
+
+          <div class="card-wheel" id="rolodex-cards" aria-live="polite">
+            <article class="rolodex-card" data-index="0">
+              <div class="card-tab">1</div>
+              <div class="card-content"><span class="card-label">CARD 1</span></div>
+            </article>
+            <article class="rolodex-card" data-index="1">
+              <div class="card-tab">2</div>
+              <div class="card-content"><span class="card-label">CARD 2</span></div>
+            </article>
+            <article class="rolodex-card" data-index="2">
+              <div class="card-tab">3</div>
+              <div class="card-content"><span class="card-label">CARD 3</span></div>
+            </article>
+            <article class="rolodex-card" data-index="3">
+              <div class="card-tab">4</div>
+              <div class="card-content"><span class="card-label">CARD 4</span></div>
+            </article>
+            <article class="rolodex-card" data-index="4">
+              <div class="card-tab">5</div>
+              <div class="card-content"><span class="card-label">CARD 5</span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="rolodex-controls">
+        <button type="button" id="rolodex-prev" aria-label="Previous card">← prev</button>
+        <span class="rolodex-indicator" id="rolodex-indicator">1 / 5</span>
+        <button type="button" id="rolodex-next" aria-label="Next card">next →</button>
+      </div>
+    </main>
+    <script src="js/rolodex-mechanical.js"></script>
+  </body>
+</html>

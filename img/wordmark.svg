@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <defs>
+    <filter id="rough">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.8"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" font-family="Georgia, serif" font-weight="700" font-size="52" letter-spacing="-2">
+    <text x="4" y="56" fill="#2f6f66">CONST</text>
+    <text x="2" y="54" fill="#c43c3a">CONST</text>
+  </g>
+</svg>

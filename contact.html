@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>✩ contact ✩ Constance Davis</title>
+    <meta name="description" content="Get in touch with Constance Davis." />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&family=Syne+Mono:wght@400;700&family=Syne+Tactile&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/y2k.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to contact</a>
+    <div class="marquee-bar">
+      <span>✩ here's my card ✩</span>
+    </div>
+    <nav class="site-nav" data-y2k-nav aria-label="Site"></nav>
+
+    <header class="hero">
+      <h1 class="site-title">✧ contact ✧</h1>
+      <p class="tagline">&gt; here's my card &lt;</p>
+      <div class="stars-divider">
+        ★ ☆ ✦ ✧ ★ ☆ ✦
+        <a class="egg" href="letter.html" title="a quieter room">★</a>
+      </div>
+    </header>
+
+    <div class="page-wrap contact-space" id="main">
+      <p class="biz-card-status" data-biz-card-status aria-live="polite">tap the card to flip ↻</p>
+
+      <div class="biz-card-scene" data-biz-card>
+        <div class="biz-card-inner">
+              <div
+                class="biz-card-face biz-card-front"
+                data-biz-card-face
+                role="button"
+                tabindex="0"
+                aria-label="Flip business card"
+                aria-expanded="false"
+              >
+                <div class="biz-card-edge biz-card-edge-top" aria-hidden="true"></div>
+                <p class="biz-card-kicker">✺ currently waiting at my mailbox for a letter ✺</p>
+                <h2 class="biz-card-name">Constance Davis</h2>
+                <p class="biz-card-role">software engineer</p>
+                <div class="biz-card-links">
+                  <p class="biz-card-contact">
+                    <span class="biz-card-contact-label">email</span>
+                    <span class="biz-card-contact-row">
+                      <a
+                        class="biz-card-link"
+                        href="mailto:constanceleedavis@gmail.com"
+                        data-contact-email
+                        data-no-flip
+                        >constanceleedavis@gmail.com</a
+                      >
+                      <button
+                        class="biz-card-copy"
+                        type="button"
+                        data-copy-email
+                        data-no-flip
+                        aria-label="Copy email address"
+                      >
+                        copy
+                      </button>
+                    </span>
+                  </p>
+                  <p class="biz-card-contact">
+                    <span class="biz-card-contact-label">linkedin</span>
+                    <a
+                      class="biz-card-link"
+                      href="https://www.linkedin.com/in/constanceleedavis/"
+                      data-contact-linkedin
+                      data-no-flip
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >linkedin.com/in/constanceleedavis</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="biz-card-face biz-card-back"
+                data-biz-card-face
+                role="button"
+                tabindex="-1"
+                aria-label="Flip business card back to front"
+                aria-hidden="true"
+              >
+                <div class="biz-card-life">
+                  <canvas
+                    class="biz-card-life-canvas"
+                    data-card-life-canvas
+                    aria-hidden="true"
+                  ></canvas>
+                </div>
+                <p class="biz-card-life-caption">pulsar · conway '70</p>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>made with <span class="sparkle-heart">💖</span> by Constance Davis</p>
+    </footer>
+    <script src="js/y2k.js"></script>
+    <script src="js/card-life.js"></script>
+  </body>
+</html>
